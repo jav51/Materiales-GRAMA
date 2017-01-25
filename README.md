@@ -4,10 +4,11 @@
 - Hernández Grajales Jesús Javier.
 
 ##Descripción del proyecto.
-En este proyecto se realizará una pagina web para una constructora llamada GRAMA, la cual además de participar en la construcción de diferentes tipos de obras, se encarga de la venta de diversos materiales para la construcción.
+El objetivo de este proyecto es crear una pagina web para una constructora la cual se encarga de hacer diferentes tipos de obras además ofrece diversos materiales para la construcción.
+Nuestro objetivo es crear una pagina web la cual contenga una descripción de los diferentes servicios que ofrece la empresa, además mostrará los diferentes tipos de materiales ofrecidos. También contará con un servicio de nominas en linea. 
 
+###Usuarios
+Las personas que creen una cuenta en la pagina web podrán consultar los servicios de la empresa, los diferentes tipos de materiales pero además podrán solicitar cotizaciones.
 
-
-
-
-##Demo
+###Administradores 
+Los administradores agregaran, modificarán o eliminarán productos, y,  podrán crear y consultar las nominas de los diferentes empleados.
