@@ -11,7 +11,7 @@ Nuestro objetivo es crear una pagina web la cual contenga una descripción de lo
 Solo podrán hacer consultas de los diferentes servicios, materiales y ofertas ofrecidos por la empresa en la pagina web.
 
 ###Usuarios
-Los usuarios registrados consultas de los diferentes servicios, materiales y ofertas ofrecidos por la empresa en la pagina web, además podrán relizar cotizaciones y agregar productos a su wish list.
+Los usuarios registrados podran hacer consultas de los diferentes servicios, materiales y ofertas ofrecidos por la empresa en la pagina web, además podrán relizar cotizaciones y agregar productos a su wish list.
 
 ###Administradores 
 Los administradores agregaran, modificarán o eliminarán productos, y,  podrán crear y consultar las nominas de los diferentes empleados.
