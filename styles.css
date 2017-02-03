@@ -31,3 +31,19 @@ div{
   margin-top: 10px;
   margin-left: 15px;
 }
+
+.flexdad{
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+}
+
+.navbar{
+  height: 55px;
+  background: #B0E0E6;
+}
+
+.linkbar{
+  height: 35px;
+  background: #DCDCDC;
+}
