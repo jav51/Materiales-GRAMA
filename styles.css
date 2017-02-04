@@ -1,0 +1,66 @@
+p{
+  margin: 5px,10px,5px,10px;
+  text-align: justify;
+}
+
+h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3{
+  clear:both;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+div{
+  margin-top: 5px;
+}
+
+.slide_trabajos{
+  width:400px;
+  height:228px;
+}
+
+.slide_productos{
+  width:200px;
+  height:110px;
+  float: left;
+}
+
+.presentable{
+  color: #778899;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-left: 30px;
+
+}
+
+.AcercaDe{
+  font-weight: 900;
+  color: #FFDAB9;
+  font-size: 40px;
+}
+
+.dentro{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.flexdad{
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+}
+
+.navbar{
+  height: 55px;
+  background: #B0E0E6;
+}
+
+.linkbar{
+  height: 35px;
+  background: #DCDCDC;
+}
