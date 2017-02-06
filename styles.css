@@ -1,0 +1,55 @@
+p{
+  margin: 5px,10px,5px,10px;
+  text-align: justify;
+}
+
+h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3{
+  clear:both;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h4{
+  clear:both;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+div{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dentro{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.flexdad{
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+}
+
+.navbar{
+  height: 55px;
+  background: #B0E0E6;
+}
+
+.filtros{
+  padding: 30px 30px 30px 30px;
+  float: left;
+  background:transparent;
+}
+
+.middlebar{
+  height: 55px;
+  background: #ACFA58;
+}
