@@ -12,6 +12,56 @@ div{
   margin-top: 5px;
 }
 
+form{
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  height: auto;
+  border-style: ridge;
+  border-width: 1px;
+  border-color: #B0C4DE;
+}
+
+label{
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 17px;
+
+}
+
+input{
+  margin-left: 7px;
+  margin-top: 12px;
+  width: 15%;
+}
+
+input[type=text]:focus{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #AFEEEE;
+}
+
+input[type=password]:focus{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #778899;
+}
+
+
+
+input[type=email]:focus{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #90EE90;
+}
+
+input[type=submit]{
+  font-weight: bold;
+  font-size: 14px;
+
+}
+
 .presentable{
   color: #778899;
   font-size: 17px;
