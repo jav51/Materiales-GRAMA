@@ -14,6 +14,7 @@ div{
 
 form{
   margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: auto;
   margin-right: auto;
   width: 65%;
@@ -21,10 +22,11 @@ form{
   border-style: ridge;
   border-width: 1px;
   border-color: #B0C4DE;
+  padding-bottom: 5px;
 }
 
 label{
-  margin-left: 10px;
+  margin-left: 11px;
   font-weight: bold;
   font-size: 17px;
 
@@ -48,7 +50,9 @@ input[type=password]:focus{
   border-color: #778899;
 }
 
-
+input[type="email"]{
+  width: 75%;
+}
 
 input[type=email]:focus{
   border-width: 3px;
@@ -96,4 +100,9 @@ input[type=submit]{
 .linkbar{
   height: 35px;
   background: #DCDCDC;
+}
+
+.horicenter{
+  display: table;
+  margin: 0 auto;
 }
