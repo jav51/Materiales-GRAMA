@@ -4,6 +4,7 @@
   left: 300px;
   border-spacing: 25px;
   border-style: double;
+  border-radius: 9px;
 }
 
 th{
@@ -89,7 +90,7 @@ border-radius: 7px;
 
 .navbar{
   height: 55px;
-  background: #B0E0E6;
+  background: #FFBF00;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
 }
@@ -104,6 +105,47 @@ border-radius: 7px;
 .linkbar{
   position: relative;
   top: 50px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.TextoFormulario{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.formularyTable{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  border-spacing: 40px;
+  border-style: solid;
+  border-radius: 9px;
+  background-color: inherit;;
+}
+
+.styleTextArea{
+  width:400px;
+  height:100px;
+  border: 2px
+  solid #990000;
+  border-radius: 9px;
+}
+
+.styleName{
+  width:300px;
+  height:30px;
+  border: 2px
+  solid #990000;
+  border-radius: 9px;
+}
+
+.linkbarFormulary{
+  position: relative;
+  top: 580px;
   display: flex;
   max-width: 100%;
   padding: 10px, 5px;
