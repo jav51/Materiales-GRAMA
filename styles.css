@@ -25,6 +25,29 @@ form{
   padding-bottom: 5px;
 }
 
+table{
+  border-collapse: collapse;
+  margin-bottom: 13px;
+}
+
+th{
+  background-color: #D3D3D3;
+}
+
+table, th, td{
+  text-align: center;
+  border: 2px solid black;
+}
+
+th,td,caption{
+  font-size: 23px;
+  padding: 4px;
+}
+
+tr:hover{
+  background-color: #D8BFD8;
+}
+
 label{
   margin-left: 11px;
   font-weight: bold;
@@ -112,4 +135,9 @@ input[type=submit]{
   padding: 30px 30px 30px 30px;
   float: left;
   background:transparent;
+}
+
+.imgTabla{
+  max-width: 60%;
+  max-height: 60%;
 }
