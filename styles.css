@@ -8,26 +8,85 @@ h2{
   margin-bottom: 10px;
 }
 
-h3{
-  clear:both;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
 div{
   margin-top: 5px;
-  margin-bottom: 5px;
 }
 
-.slide_trabajos{
-  width:400px;
-  height:228px;
+form{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  height: auto;
+  border-style: ridge;
+  border-width: 1px;
+  border-color: #B0C4DE;
+  padding-bottom: 5px;
 }
 
-.slide_productos{
-  width:200px;
-  height:110px;
-  float: left;
+table{
+  border-collapse: collapse;
+  margin-bottom: 13px;
+}
+
+th{
+  background-color: #D3D3D3;
+}
+
+table, th, td{
+  text-align: center;
+  border: 2px solid black;
+}
+
+th,td,caption{
+  font-size: 23px;
+  padding: 4px;
+}
+
+tr:hover{
+  background-color: #D8BFD8;
+}
+
+label{
+  margin-left: 11px;
+  font-weight: bold;
+  font-size: 17px;
+
+}
+
+input{
+  margin-left: 7px;
+  margin-top: 12px;
+  width: 15%;
+}
+
+input[type=text]:focus{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #AFEEEE;
+}
+
+input[type=password]:focus{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #778899;
+}
+
+input[type="email"]{
+  width: 75%;
+}
+
+input[type=email]:focus{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #90EE90;
+}
+
+input[type=submit]{
+  font-weight: bold;
+  font-size: 14px;
+
 }
 
 .presentable{
@@ -62,6 +121,28 @@ div{
 }
 
 .linkbar{
+  clear: left;
   height: 35px;
   background: #DCDCDC;
+}
+
+.horicenter{
+  display: table;
+  margin: 0 auto;
+}
+
+.filtros{
+  padding: 30px 30px 30px 30px;
+  float: left;
+  background:transparent;
+}
+
+.imgTabla{
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.regEmpleados
+{
+  text-align: center;
 }
