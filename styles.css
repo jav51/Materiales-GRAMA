@@ -108,3 +108,23 @@ button
   padding: 4px 10px;
 
 }
+caption{
+  text-align: center;
+  padding: 2% 10%;
+  font-size: 200%;
+}
+table{
+  margin: 5%;
+}
+
+th{
+   background-color: forestgreen;
+}
+
+th,td {
+   text-align: center;
+   border-width: 2px;
+   border-style: solid;
+   border-color: black;
+   font-size: 120%
+}
