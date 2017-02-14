@@ -8,26 +8,27 @@ h2{
   margin-bottom: 10px;
 }
 
+h3{
+  clear:both;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 div{
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-form{
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: auto;
-  border-style: ridge;
-  border-width: 1px;
-  border-color: #B0C4DE;
-  padding-bottom: 5px;
+.slide_trabajos{
+  width:400px;
+  height:228px;
 }
 
-  label {
-    padding: 1.5% 10%;
-  }
+.slide_productos{
+  width:200px;
+  height:110px;
+  float: left;
+}
 
 .presentable{
   color: #778899;
@@ -61,10 +62,29 @@ form{
 }
 
 .linkbar{
-  clear: left;
   height: 35px;
   background: #DCDCDC;
 }
+
+form{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  border-style: ridge;
+  border-width: 1px;
+  border-color: #B0C4DE;
+  padding-bottom: 5px;
+}
+
+  label {
+    padding: 1.5% 40%;
+  }
+  label.Cpass{
+    padding: 1.5% 10%;
+  }
 
 .horicenter{
   display: table;
@@ -104,7 +124,7 @@ button
   margin-top: 5%;
   margin-bottom: 5%;
   margin-right: 40%;
-  margin-left: 40%;
+  margin-left: 45%;
   padding: 4px 10px;
 
 }
@@ -127,4 +147,8 @@ th,td {
    border-style: solid;
    border-color: black;
    font-size: 120%
+}
+
+.logo{
+  height: 45px;
 }
