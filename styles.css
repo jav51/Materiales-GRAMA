@@ -1,3 +1,8 @@
+body{
+    padding-top: 100px;
+    height: 100%
+}
+
 p{
   margin: 5px,10px,5px,10px;
   text-align: justify;
@@ -46,8 +51,7 @@ div{
 }
 
 .dentro{
-  margin-top: 10px;
-  margin-left: 15px;
+  position: relative;
 }
 
 .flexdad{
@@ -55,15 +59,102 @@ div{
   max-width: 100%;
   padding: 10px, 5px;
 }
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+    background: url(img/logo.png) no-repeat ;
+    background-size: auto;
+    width: 129px;
+    height: 100px;
+}
+
 
 .navbar{
-  height: 55px;
+  height: 15%;
   background: #B0E0E6;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+.navmenu li {
+    float: left;
+    margin-left: 0;
+    list-style: none;
+    list-style-image: none;
+}
+
+.navmenu li a{
+  position: relative;
+  display: block;
+  color: #656565;
+  line-height: 1.875rem;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  padding: 0.625rem 0.78125rem 0.3125rem;
+}
+.navbar-header {
+    float: left;
+    margin-left: 75px;
+    margin-top: 0;
+    width: 140px;
+}
+.navbar_logo{
+  float: left;
+  margin-left: 75px;
+  margin-top: 0;
+  width: 140px;
+  padding-right: 40%
+}
+
+.topmenu{
+    display: inline ;
+    float: right;
+    height: auto;
+    padding-bottom: 0;
+    overflow: visible;
+    max-height: 340px;
+    padding-right: 3px;
+    padding-left: 15px;
+    margin-top: 50px;
+}
+
+.listanavmenu {
+    margin-left: 0;
+    margin-top: 10px;
+}
+.navmenu{
+    margin: 7.5px -15px;
+}
+@media only screen and (min-width: 1025px){
+  .navmenu {
+      float: right;
+    }
+}
+@media only screen and (min-width: 981px){
+  .navmenu {
+      position: static;
+      width: auto;
+      height: auto;
+      margin-bottom: 0;
+      background: none;
+      overflow: visible;
+      margin-left: -5px !important;
+      margin-right: -5px;
+  }
 }
 
 .linkbar{
   height: 35px;
   background: #DCDCDC;
+}
+
+a{
+  text-decoration: none;
+  color: #656565;
 }
 
 form{
@@ -119,7 +210,8 @@ input[type="email"], input[type="password"],input[type="text"],input[type="phone
   height: 1rem;
 }
 
-button
+
+form button
 {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -134,7 +226,7 @@ caption{
   font-size: 200%;
 }
 table{
-  margin: 5%;
+  margin: auto;
 }
 
 th{
@@ -149,6 +241,6 @@ th,td {
    font-size: 120%
 }
 
-.logo{
-  height: 45px;
+.table_consultaEmpleados{
+  margin:auto;
 }
