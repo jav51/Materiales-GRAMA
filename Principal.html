@@ -6,12 +6,31 @@
 </head>
 <!-- Barra estatica con opciones de navegacion (apareceria en todas las pags)-->
 <body>
-  <div class="flexdad navbar"> Navbar
-    <div class="dentro"><img class="logo" src="logo.png" alt="logo"></div>
-    <div class="dentro"> Acerca de la compañia </div>
-    <div class="dentro"> Productos </div>
-    <div class="dentro"> Servicios </div>
+  <header class="flexdad navbar">
+    <div class="dentro logo navbar_logo">
+        <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="topmenu">
+    <ul class="navmenu listanavmenu">
+      <li >
+        <a href="#">
+          <span>Acerca de Nosotros</span>
+        </a>
+      </li>
+      <li >
+        <a href="#">
+          <span>Productos</span>
+        </a>
+    </li>
+      <li >
+        <a href="#">
+          <span>Servicios</span>
+        </a>
+    </li>
+    </ul>
   </div>
+
+  </header>
 
 <!-- Aqui se presentaran algunas imagenes sobre los trabajos realizados por la empresa -->
   <div>
@@ -52,13 +71,19 @@
 
   <!-- Una seccion con links importantes para la compañia
   (apareceria en todas las pags)-->
-  <div class="flexdad linkbar"> Links importantes
+  <footer class="flexdad linkbar"> Links importantes
     <ul>
-      <il> Link a politica de privacidad </il>
-      <il> Link a terminos y condiciones </il>
-      <il> Link a bolsa de trabajo </il>
+      <il><a href="#">
+        <span>Link a politica y privacidad</span>
+      </a></il>
+      <il> <a href="#">
+        <span>Link a terminos y condiciones</span>
+      </a></il>
+      <il> <a href="#">
+        <span>Link a bolsa de trabajo</span>
+      </a> </il>
     </ul>
-  </div>
+  </footer>
 </body>
 
 
