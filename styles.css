@@ -80,7 +80,7 @@ th, td{
 
 .horicenter{
   display: table;
-  margin: 0 auto;
+  margin: 3% auto;
 }
 
 .filtros{
@@ -155,7 +155,7 @@ th, td{
   left: 0px;
   min-height: 100px;
   margin-bottom: 20px;
-  box-shadow: 0px 8px 10px -8px orange;
+  box-shadow: 0px 5px 10px -8px yellow;
 }
 .navmenu li {
     float: left;
@@ -275,12 +275,6 @@ th, td{
 .formulario label.Cpass{
     padding: 1.5% 10%;
   }
-
-.horicenter{
-  display: table;
-  margin: 0 auto;
-}
-
 
 .imgTabla{
   max-width: 60%;
@@ -495,12 +489,6 @@ border-radius: 7px;
   font-family: sans-serif;
 }
 
-.flexdad{
-  display: flex;
-  max-width: 100%;
-  padding: 10px, 5px;
-}
-
 .middlebar{
   height: 55px;
   background: #ACFA58;
@@ -540,18 +528,16 @@ border-radius: 7px;
 }
 
 .TextoFormulario{
+  padding: 5px;
   font-family: sans-serif;
   font-size: 20px;
 }
 
 .formularyTable{
-  position: absolute;
-  top: 25%;
-  left: 25%;
   border-spacing: 40px;
   border-style: solid;
   border-radius: 9px;
-  background-color: inherit;;
+  background-color: inherit;
 }
 
 .styleTextArea{
