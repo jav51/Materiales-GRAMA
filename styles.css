@@ -1,34 +1,98 @@
-#container {
-  overflow: hidden;
-  width: 100%;
-}
 body{
-    padding-top: 100px;
-    height: 100%
+  padding-top:100px;
+  font-size: 16px;
 }
 
 p{
   margin: 5px,10px,5px,10px;
   text-align: justify;
 }
-h1{
-  text-align: center;
-}
+
 
 h2{
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-h3{
-  clear:both;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
 div{
+  clear: both;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+table{
+  border-collapse: collapse;
+  margin-bottom: 13px;
+}
+
+th, td{
+  text-align: center;
+}
+
+/*th,td {
+   text-align: center;
+   border-width: 2px;
+   border-style: solid;
+   border-color: black;
+   font-size: 120%
+}*/
+
+.wishlist-table{
+  border-spacing: 9px;
+  border-collapse: separate;
+}
+
+.wishlist-row{
+  border-top: 2px ridge gray;
+}
+
+.inside-wish{
+  font-weight: 700;
+  font-size: 105%;
+  text-align: justify;
+}
+
+.presentable{
+  color: #778899;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-left: 30px;
+
+}
+
+.AcercaDe{
+  font-weight: 900;
+  color: #FFDAB9;
+  font-size: 40px;
+}
+
+.dentro{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.flexdad{
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+}
+
+.horicenter{
+  display: table;
+  margin: 0 auto;
+}
+
+.filtros{
+  padding: 30px 30px 30px 30px;
+  position: absolute;
+  float: left;
+  background:transparent;
+}
+
+.imgTabla{
+  max-width: 60%;
+  max-height: 60%;
 }
 
 .slide_trabajos{
@@ -39,9 +103,6 @@ div{
 .slide_trabajos img{
   width:100%;
   height:75%;
-}
-#cant{
-  text-align: center;
 }
 
 .slide_productos{
@@ -87,14 +148,14 @@ div{
 
 .navbar{
   height: 15%;
-  background: #B0E0E6;
+  background: #3D3D3D;
   position: fixed;
   top: 0px;
   right: 0px;
   left: 0px;
   min-height: 100px;
   margin-bottom: 20px;
-  box-shadow: 0px 5px 10px -8px #808080;
+  box-shadow: 0px 8px 10px -8px orange;
 }
 .navmenu li {
     float: left;
@@ -195,11 +256,6 @@ div{
   padding: 0.625rem 0.78125rem 0.3125rem;
 }
 
-a{
-  text-decoration: none;
-  color: #656565;
-}
-
 .formulario{
   margin-top: 10%;
   margin-bottom: 10%;
@@ -225,11 +281,6 @@ a{
   margin: 0 auto;
 }
 
-.filtros{
-  padding: 30px 30px 30px 30px;
-  float: left;
-  background:transparent;
-}
 
 .imgTabla{
   max-width: 60%;
@@ -242,18 +293,6 @@ a{
   text-align: center;
   clear:both;
 }
-
-input[type="email"], input[type="password"],input[type="text"],input[type="phone"],textarea
-{
-  padding:2%  1%;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgba(0,0,0,0.4);
-  height: 32px;
-  height: 1rem;
-}
-
-
 .formulario button
 {
   margin-top: 5%;
@@ -274,14 +313,6 @@ input[type="email"], input[type="password"],input[type="text"],input[type="phone
 
 .tabla-prueba{
    background-color: forestgreen;
-}
-
-th,td {
-   text-align: center;
-   border-width: 2px;
-   border-style: solid;
-   border-color: black;
-   font-size: 120%
 }
 
 .tabla-empleados
@@ -321,4 +352,255 @@ th,td {
 .Confirmacion_Elim ul li{
   display: inline;
   list-style: none;
+}
+
+.imgProductsS{
+  width: 115px;
+  height: 115px;
+}
+.imgProductsB{
+  width: 350px;
+  height: 350px;
+}
+
+.ViewImage{
+  position: fixed;
+  top: 23.5%;
+  left: 2.6%;
+  border-spacing: 7.5px;
+}
+
+.mouseOver{
+  width: 200px;
+  height: 200px;
+}
+
+.BarOpc{
+  position: relative;
+  float: right;
+  top: 37.6%;
+}
+
+.opc{
+  background: black;
+}
+
+/*Baja de productos*/
+.centro{
+  position: absolute;
+  top: 18%;
+  left: 6%
+}
+
+.centroModificacion{
+  position: absolute;
+  top: 18%;
+  left: 28%
+}
+
+.centroContacto{
+  position: absolute;
+  top: 18%;
+  left: 22%;
+}
+
+.arial{
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+}
+
+.deleteText{
+  font-family: arial;
+  font-weight: bold;
+}
+
+.size_20{
+  font-size: 20px;
+}
+
+.tableDelete{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  border-spacing: 40px;
+  border-style: solid;
+  border-radius: 9px;
+  background-color: inherit;;
+}
+
+
+.dentro{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+
+.contacto{
+  position: absolute;
+  top: 500px;
+  left: 30px;
+}
+
+.box{
+  padding: 10px 10px 10px 10px;
+  background: lightblue;
+  font: caption;
+  color: black;
+}
+
+.boxTop{
+  padding: 10px 10px 10px 10px;
+  background: lightblue;
+  font-weight:bold;
+  color: black;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.boxBottom{
+  padding: 10px 10px 10px 10px;
+  background: lightblue;
+  color: black;
+  font: caption;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.captions{
+  font:150% sans-serif;
+  font-weight: bold;
+}
+
+.tableimg{
+width: 300px;
+height: 300px;
+border-radius: 7px;
+}
+
+.tableText{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.barInf{
+  background:lightblue;
+  border-radius: 9px;
+}
+
+.NextPage{
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.flexdad{
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+}
+
+.middlebar{
+  height: 55px;
+  background: #ACFA58;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+
+.linkbarServicesUp{
+  position: relative;
+  top: 730px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.linkbarContactUp{
+  position: relative;
+  top: 660px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.linkbarServicesMod{
+  position: relative;
+  top: 860px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.TextoFormulario{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.formularyTable{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  border-spacing: 40px;
+  border-style: solid;
+  border-radius: 9px;
+  background-color: inherit;;
+}
+
+.styleTextArea{
+  width:400px;
+  height:100px;
+  border: 2px
+  solid #990000;
+  border-radius: 9px;
+}
+
+.styleName{
+  width:300px;
+  height:30px;
+  border: 2px
+  solid #990000;
+  border-radius: 9px;
+}
+
+.linkbarFormulary{
+  position: relative;
+  top: 580px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.tablestyle{
+  position: absolute;
+  top: 20.5%;
+  left: 23%;
+  border-spacing: 25px;
+  border-style: double;
+  border-radius: 9px;
+}
+
+#container {
+  overflow: hidden;
+  width: 100%;
+}
+#cant{
+  text-align: center;
+}
+
+/* Compatibilidad con resolucion usual de un smartphone base de transformacion:3.33*/
+@media only screen and (max-width: 360px) and (max-height: 640px) {
+}
+
+/* Compatibilidad con resolucion usual de una tableta base de transformacion:1.7*/
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
 }
