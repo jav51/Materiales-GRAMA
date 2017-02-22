@@ -467,7 +467,7 @@ th, td{
   border-bottom-right-radius: 9px;
 }
 
-.captions{
+.bolded-capt{
   font:150% sans-serif;
   font-weight: bold;
 }
@@ -545,7 +545,6 @@ border-radius: 7px;
 }
 
 .formularyTable{
-  position: absolute;
   top: 25%;
   left: 25%;
   border-spacing: 40px;
@@ -562,9 +561,11 @@ border-radius: 7px;
   border-radius: 9px;
 }
 
+
 .styleName{
-  width:300px;
-  height:30px;
+  font-size: 80%;
+  width:25%;
+  height:15%;
   border: 2px
   solid #990000;
   border-radius: 9px;
@@ -595,6 +596,40 @@ border-radius: 7px;
 }
 #cant{
   text-align: center;
+}
+
+#nombre{
+  width: 15%;
+  height: 10%;
+}
+
+#apellidopat{
+  width: 15%;
+  height: 10%;
+}
+
+#apellidomat{
+  width: 15%;
+  height: 10%;
+}
+
+#mail{
+width: 70%;
+height: 10%;
+}
+
+#reg{
+  float: right;
+  font-size: 80%;
+  width: 20%;
+  height: 20%;
+}
+
+#reset{
+  float: right;
+  font-size: 80%;
+  width: 20%;
+  height: 20%;
 }
 
 /* Compatibilidad con resolucion usual de un smartphone base de transformacion:3.33*/
