@@ -85,7 +85,7 @@ th, td{
 
 .horicenter{
   display: table;
-  margin: 0 auto;
+  margin: 3% auto;
 }
 
 .filtros{
@@ -542,15 +542,15 @@ border-radius: 7px;
 .TextoFormulario{
   font-family: sans-serif;
   font-size: 20px;
+  padding: 5px;
 }
 
 .formularyTable{
-  top: 25%;
-  left: 25%;
+  margin: 7% auto;
   border-spacing: 40px;
   border-style: solid;
   border-radius: 9px;
-  background-color: inherit;;
+  background-color: inherit;
 }
 
 .styleTextArea{
