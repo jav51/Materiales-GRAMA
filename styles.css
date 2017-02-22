@@ -1,7 +1,7 @@
 .tablestyle{
-  position: relative;
-  top: 25px;
-  left: 300px;
+  position: absolute;
+  top: 20.5%;
+  left: 23%;
   border-spacing: 25px;
   border-style: double;
   border-radius: 9px;
@@ -104,7 +104,37 @@ border-radius: 7px;
 
 .linkbar{
   position: relative;
-  top: 50px;
+  top: 1300px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.linkbarServicesUp{
+  position: relative;
+  top: 730px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.linkbarContactUp{
+  position: relative;
+  top: 660px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.linkbarServicesMod{
+  position: relative;
+  top: 860px;
   display: flex;
   max-width: 100%;
   padding: 10px, 5px;
@@ -151,4 +181,254 @@ border-radius: 7px;
   padding: 10px, 5px;
   height: 35px;
   background: #DCDCDC;
+}
+
+
+/*Barra de Navegacion*/
+
+
+header{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: #3D3D3D;
+}
+
+h1{
+  width: 50%;
+  padding-left: 40px;
+}
+nav ul li a, h1 a{
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover, h1 a:hover{
+  text-decoration: underline;
+}
+
+nav{
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+nav ul{
+  float: right;
+}
+
+nav ul li{
+  display: inline-block;
+  font-size: 15px;
+  padding-right: 30px;
+  padding-top: 15px;
+}
+
+/*Estilos de Productos*/
+.imgProductsS{
+  width: 115px;
+  height: 115px;
+}
+.imgProductsB{
+  width: 350px;
+  height: 350px;
+}
+
+.ViewImage{
+  position: absolute;
+  top: 23.5%;
+  left: 2.6%;
+  border-spacing: 7.5px;
+}
+
+.mouseOver{
+  width: 200px;
+  height: 200px;
+}
+
+.BarOpc{
+  position: relative;
+  float: right;
+  top: 37.6%;
+}
+
+.opc{
+  background: black;
+}
+
+/*Baja de productos*/
+.centro{
+  position: absolute;
+  top: 18%;
+  left: 6%
+}
+
+.centroModificacion{
+  position: absolute;
+  top: 18%;
+  left: 28%
+}
+
+.centroContacto{
+  position: absolute;
+  top: 18%;
+  left: 22%;
+}
+
+.arial{
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+}
+
+.deleteText{
+  font-family: arial;
+  font-weight: bold;
+}
+
+.size_20{
+  font-size: 20px;
+}
+
+.tableDelete{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  border-spacing: 40px;
+  border-style: solid;
+  border-radius: 9px;
+  background-color: inherit;
+}
+
+/*Servicios*/
+
+.tebleServices{
+  border-spacing: 15px;
+  position: absolute;
+  top: 28%;
+  left: 3%
+}
+
+.servicesTitle{
+  position: absolute;
+  top: 17%;
+  left: 45%;
+}
+
+.imgServicesSm{
+  width: 110px;
+  height: 110px;
+}
+
+.imgServiesBg{
+  padding: 0px 35px 0px 35px;
+  width: 300px;
+  height: 300px;
+}
+
+.rightbar{
+  position:absolute;
+  top: 35%;
+  right: 3.5%;
+  height: 300px;
+  width: 200px;
+  background-color: #FFFFFF;
+  border: 2px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #BDBDBD;
+}
+
+.userDatadiv{
+  padding: 20px 35px 0px 35px;
+  width: 140px;
+  height: 95px;
+}
+
+.userData{
+  text-align: center;
+  font-family: arial;
+  font-size: 15px;
+}
+
+.cartButtondiv{
+  padding: 10px 35px 0px 35px;
+  width: 124px;
+  height: 35px;
+}
+
+.cartButton{
+  font-size:12px;
+  font-family:Verdana,Helvetica;
+  width:130px;
+  height:25px;
+  background: #FFBF00;
+  border-radius: 3px;
+}
+
+.whislistButtondiv{
+  padding: 50px 35px 0px 35px;
+  width: 140px;
+  height: 35px;
+}
+
+.wishlistButton{
+  font-size:12px;
+  font-family:Verdana,Helvetica;
+  width:130px;
+  height:25px;
+  background: #58D3F7;
+  border-radius: 3px;
+}
+
+.descriptionServicediv{
+  padding: 25px 20px 0px 15px;
+  position: absolute;
+  top: 32%;
+  left: 35%;
+  width: 575px;
+  height: 400px;
+  background: #FFFFFF;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #BDBDBD;
+}
+
+.descriptionServices{
+  padding: 20px 15px 0px 15px;
+  width: 500px;
+  height: 150px;
+  font-family: arial;
+  font-size: 20px;
+  border-bottom-style: solid;
+  border-color: #585858;
+}
+
+.servicesAditionalInfo{
+  padding: 20px 15px 0px 15px;
+}
+
+.prodInfodiv{
+  padding: 25px 20px 0px 15px;
+  position: absolute;
+  top: 32%;
+  left: 40%;
+  width: 450px;
+  height: 300px;
+  background: #FFFFFF;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #BDBDBD;
+}
+
+.descriptionProduct{
+  padding: 20px 15px 0px 15px;
+  width:400px;
+  height: 150px;
+  font-family: arial;
+  font-size: 20px;
+  border-bottom-style: solid;
+  border-color: #585858;
 }
