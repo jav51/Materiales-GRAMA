@@ -590,7 +590,16 @@ border-radius: 7px;
   border-radius: 9px;
 }
 
+.id-modif-table{
+  font-weight: bold;
+}
 
+.id-search-table{
+  font-style: italic;
+  font-weight: bold;
+  color: blue;
+
+}
 
 #container {
   overflow: hidden;
