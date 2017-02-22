@@ -29,14 +29,28 @@ th, td{
   text-align: center;
 }
 
-th,td {
+/*th,td {
    text-align: center;
    border-width: 2px;
    border-style: solid;
    border-color: black;
    font-size: 120%
+}*/
+
+.wishlist-table{
+  border-spacing: 9px;
+  border-collapse: separate;
 }
 
+.wishlist-row{
+  border-top: 2px ridge gray;
+}
+
+.inside-wish{
+  font-weight: 700;
+  font-size: 105%;
+  text-align: justify;
+}
 
 .presentable{
   color: #778899;
@@ -71,6 +85,7 @@ th,td {
 
 .filtros{
   padding: 30px 30px 30px 30px;
+  position: absolute;
   float: left;
   background:transparent;
 }
@@ -266,11 +281,6 @@ th,td {
   margin: 0 auto;
 }
 
-.filtros{
-  padding: 30px 30px 30px 30px;
-  float: left;
-  background:transparent;
-}
 
 .imgTabla{
   max-width: 60%;
@@ -425,11 +435,6 @@ th,td {
   margin-left: 15px;
 }
 
-.filtros{
-  position: absolute;
-  top:170px;
-  left: 30px;
-}
 
 .contacto{
   position: absolute;
