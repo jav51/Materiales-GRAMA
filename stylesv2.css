@@ -78,6 +78,11 @@ th, td{
   padding: 10px, 5px;
 }
 
+.descripcion-form{
+  float: left;
+  margin-top: 7%;
+}
+
 .horicenter{
   display: table;
   margin: 0 auto;
@@ -275,11 +280,6 @@ th, td{
 .formulario label.Cpass{
     padding: 1.5% 10%;
   }
-
-.horicenter{
-  display: table;
-  margin: 0 auto;
-}
 
 
 .imgTabla{
@@ -590,6 +590,8 @@ border-radius: 7px;
   border-radius: 9px;
 }
 
+
+
 #container {
   overflow: hidden;
   width: 100%;
@@ -622,6 +624,12 @@ height: 10%;
   float: right;
   font-size: 80%;
   width: 20%;
+  height: 20%;
+}
+
+#regprom{
+  float: right;
+  font-size: 80%;
   height: 20%;
 }
 
