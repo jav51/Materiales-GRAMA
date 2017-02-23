@@ -143,6 +143,7 @@ th, td{
   margin-bottom: 20px;
   box-shadow: 0px 8px 10px -8px orange;
 }
+
 .navmenu li {
     float: left;
     margin-left: 0;
@@ -248,8 +249,7 @@ th, td{
   max-height: 60%;
 }
 
-.regEmpleados
-{
+.regEmpleados{
   padding: 1%;
   text-align: center;
   clear:both;
@@ -606,6 +606,7 @@ td.nomina-textR, .nomina-textR td{
 width: 70%;
 height: 10%;
 }
+
 #rfc{
 width: 60%;
 height: 10%;
@@ -634,6 +635,8 @@ height: 10%;
   width: 20%;
   height: 20%;
 }
+
+
 #dias-nomina{
   width: 10%;
 }
@@ -646,6 +649,7 @@ height: 10%;
 #fecha-nomina{
   width: 90%;
 }
+
 
 /* Compatibilidad con resolucion usual de un smartphone base de transformacion:3.33*/
 @media only screen and (max-width: 360px) and (max-height: 640px) {

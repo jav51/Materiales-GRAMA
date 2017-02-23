@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesv2.css" />
+
+    <title>Actualizar información</title>
+
+  </head>
+  <body>
+    <header class="flexdad navbar">
+        <div class="dentro logo navbar_logo">
+            <a class="navbar-brand" href="#" alt="logo"></a>
+        </div>
+        <div class="topmenu">
+        <ul class="navmenu listanavmenu">
+          <li >
+            <a href="#">
+              <span>Acerca de Nosotros</span>
+            </a>
+          </li>
+          <li >
+            <a href="#">
+              <span>Productos</span>
+            </a>
+        </li>
+          <li >
+            <a href="#">
+              <span>Servicios</span>
+            </a>
+        </li>
+        </ul>
+      </div>
+
+      </header>
+
+
+      <div class="tableText"><h3>Actualiza los datos que deseas modificar.</h3></div>
+
+      <form action="Registrar_usuario.html" method="post">
+      <table class="formularyTable horicenter">
+        <caption class="bolded-capt">"Nombre de usuario"</caption>
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="TextoFormulario">
+              <label for="nombre">Nombres:</label>
+              <input  class="styleName  " type="text" id="nombre" name="nombre" value="Nombre actual"/>
+              <label for="apellidopat">Apellido paterno:</label>
+              <input class="styleName" type="text" id="apellidopat" name="apellido paterno" value="Apellido actual" />
+              <label for="apellidomat">Apellido materno:</label>
+              <input class=" styleName" type="text" id="apellidomat" name="apellido materno"  value="Apellido actual"/>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="TextoFormulario">
+                <label for="mail">Correo electronico:</label>
+                <input class=" styleName" type="email" id="mail" name="correo" value="Correo@actual" />
+          </div>
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="TextoFormulario">
+              <label for="pass">Contraseña: </label>
+              <input class=" styleName" type="password" id="pass" name="contraseña" placeholder="Nueva contraseña" />
+              <label for="pass">Confirmar contraseña:</label>
+              <input class=" styleName" type="password" id="cpass" name="confrimar contraseña" placeholder="Confirmar contraseña nueva" />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <div class="TextoFormulario">
+            <input type="submit" name="actualizar" value="Actualizar" id="reg"/>
+            </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+      </form>
+
+    <footer class="flexdad linkbar"> Links importantes
+  <div class="bottom-menu">
+      <ul class="link-menu">
+        <li><a href="#">
+          <span>Link a politica y privacidad</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a terminos y condiciones</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a bolsa de trabajo</span>
+        </a> </li>
+      </ul>
+  </div>
+    </footer>
+
+  </body>
+</html>
