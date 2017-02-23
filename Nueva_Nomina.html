@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesv2.css" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header class="flexdad navbar">
+      <div class="dentro logo navbar_logo">
+          <a class="navbar-brand" href="#" alt="logo"></a>
+      </div>
+      <div class="topmenu">
+      <ul class="navmenu listanavmenu">
+        <li >
+          <a href="#">
+            <span>Acerca de Nosotros</span>
+          </a>
+        </li>
+        <li >
+          <a href="#">
+            <span>Productos</span>
+          </a>
+      </li>
+        <li >
+          <a href="#">
+            <span>Servicios</span>
+          </a>
+      </li>
+      </ul>
+    </div>
+
+    </header>
+
+    <h1 class="regEmpleados">Creacion de Nomina</h1>
+    <div>
+      <form action="#" method="post">
+
+      <table class="formularyTable horicenter">
+        <tbody>
+          <tr>
+
+            <td colspan="10"><strong>GRACIANO MARTINEZ CAUDILLO</strong></td>
+
+          </tr>
+          <tr>
+
+            <td colspan="5">R.F.C.: MACG790218GF8</td>
+            <td colspan="5">REGISTRO PATRONAL: </td>
+
+          </tr>
+          <tr>
+
+            <td colspan="4">Domicilio: Constitucion 198</td>
+            <td colspan="3">COL: San Sebastianito</td>
+            <td colspan="3">TEL: 33-31-64-90</td>
+
+          </tr>
+          <tr class="nomina-topborder nomina-textL ">
+
+            <td></td>
+            <td colspan="5">NOMBRE: ALEXIS SANTANA GONZALEZ</td>
+            <td colspan="2">R.F.C.: </td>
+            <td colspan="2">AFILIACION IMSS</td>
+
+          </tr>
+          <tr class="nomina-bottomborder">
+
+            <td></td>
+            <td colspan="5"><p></p></td>
+            <td colspan="2">SAGA165168416</td>
+            <td colspan="2">1651351656</td>
+
+          </tr>
+          <tr class="nomina-sideborder nomina-textL">
+
+            <td></td>
+            <td colspan="2">PUESTO</td>
+            <td>NO. EMPL.</td>
+            <td>DIAS</td>
+            <td>HORAS</td>
+            <td colspan="2" class="bottomborder">FECHA DE PAGO</td>
+            <td colspan="2" class="bottomborder">(fecha)</td>
+
+          </tr>
+          <tr class="nomina-bottomborder">
+
+            <td></td>
+            <td colspan="2">GERENTE COMERCIO</td>
+            <td>21159545</td>
+            <td><input id="dias-nomina"type="text" name="dias" /></td>
+            <td><input id="horas-nomina"type="text" name="horas" /></td>
+            <td colspan="4">Periodo No. <input id="periodo-nomina"type="text" name="periodo" /></td>
+
+          </tr>
+          <tr class="nomina-sideborder">
+
+            <td></td>
+            <td colspan="5"></td>
+            <td colspan="2"><input id="fecha-nomina" type="date" name="inicio" /></td>
+            <td colspan="2"><input id="fecha-nomina" type="date" name="fin" /></td>
+
+          </tr>
+          <tr class="nomina-headers nomina-sideborder">
+
+            <td><strong>DIAS</strong></td>
+            <td colspan="3"><strong>PERCEPCIONES</strong></td>
+            <td colspan="2"><strong>DEDUCCIONES</strong></td>
+            <td colspan="4"></td>
+
+          </tr>
+          <tr class="nomina-sideborder">
+
+            <td>(num dias)</td>
+            <td colspan="2" class="nomina-textL">Sueldo: </td>
+            <td>$(sueldo num)</td>
+            <td class="nomina-textL">Ret. ISR</td>
+            <td>$<input id="isr-nomina"type="number" name="isr"  class="numeros-nomina"/></td>
+            <td colspan="2" class="nomina-textL">Neto: </td>
+            <td colspan="2">(sueldo net)</td>
+
+          </tr>
+          <tr class="nomina-sideborder">
+
+            <td></td>
+            <td colspan="2" class="nomina-textL">7o Dia Proporcional</td>
+            <td>$<input id="7oDia-nomina"type="number" name="7dia"  class="numeros-nomina"/></td>
+            <td class="nomina-textL">I.M.S.S.</td>
+            <td>$<input id="imss-nomina"type="number" name="imss"  class="numeros-nomina"/></td>
+            <td colspan="2" class="nomina-textL">+Subs. Empleo: </td>
+            <td colspan="2">-</td>
+
+          </tr>
+          <tr class="nomina-sideborder">
+
+            <td></td>
+            <td colspan="2" class="nomina-textL">Bono Asistencia</td>
+            <td>$<input id="asist-nomina"type="number" name="asist"  class="numeros-nomina"/></td>
+            <td class="nomina-textL">Infonavit</td>
+            <td>$<input id="infonavit-nomina"type="number" name="infonavit "  class="numeros-nomina"/></td>
+            <td colspan="2" class="nomina-textL">Neto + Subsidio</td>
+            <td colspan="2">(sueldo final)</td>
+
+          </tr>
+          <tr class="nomina-sideborder">
+
+            <td></td>
+            <td colspan="2" class="nomina-textL">Despensa</td>
+            <td>$<input id="despensa-nomina"type="number" name="despensa"  class="numeros-nomina" class="numeros-nomina"/></td>
+            <td class="nomina-textL">Sueldo Ant.</td>
+            <td>$<input id="sueld-ant-nomina"type="number" name="sueldo-ant"  class="numeros-nomina"/></td>
+            <td colspan="4"></td>
+
+          </tr>
+          <tr class="nomina-sideborder">
+
+            <td></td>
+            <td colspan="2" class="nomina-textL">Otras Percepciones</td>
+            <td>$<input id="otros-nomina"type="number" name="otros"  class="numeros-nomina"/></td>
+            <td class="nomina-textL">Prestamos</td>
+            <td>$<input id="prestamos-nomina"type="number" name="prestamos"  class="numeros-nomina"/></td>
+            <td colspan="4" class="nomina-headers"><strong>Observaciones</strong></td>
+
+          </tr>
+          <tr class="nomina-sideborder">
+
+            <td></td>
+            <td colspan="2" class="nomina-textL">Bono</td>
+            <td>$<input id="bono-nomina"type="number" name="bono"  class="numeros-nomina"/></td>
+            <td class="nomina-textL">Saldo Prestamo</td>
+            <td>$<input id="saldopres-nomina"type="number" name="saldo-prest" class="numeros-nomina"/></td>
+            <td colspan="4" rowspan="2" class="bottomborder"><input id="observaciones-nomina" type="text-area" name="observaciones" /></td>
+
+          </tr>
+          <tr class="nomina-sideborder bottomborder">
+
+            <td><p></p></td>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+
+          </tr>
+          <tr class="nomina-sideborder bottomborder">
+
+            <td></td>
+            <td colspan="2" class="nomina-textR">Total Ingresos:</td>
+            <td>(total percep.)</td>
+            <td class="nomina-textR">Total Deducc.</td>
+            <td>(total deducc.)</td>
+            <td colspan="2">Subs. Empleo: </td>
+            <td colspan="2">(subs)</td>
+
+          </tr>
+          <tr>
+
+            <td colspan="10"><p></p></td>
+
+          </tr>
+          <tr>
+
+            <td><strong>(</strong></td>
+            <td colspan="8"><strong>(sueldo total con letra) PESOS 00/100 M.N.</strong></td>
+            <td><strong>)</strong></td>
+
+          </tr>
+          <tr>
+
+            <td></td>
+            <td colspan="4" rowspan="4">
+              <p>RECIBI POR EL PERIODO ARRIBA MENCIONADO, LA CANTIDAD NETA A</p>
+              <p>QUE ESTE DOCUMENTO SE REFIERE, ESTANDO CONFORME CON LAS</p>
+              <p>PERCEPCIONES Y LAS DEDUCCIONES QUE EN EL APARECEN ESPECIFICADAS,</p>
+              <p>NO RESERVANDOME RECLAMACION ALGUNA.</p>
+
+            </td>
+            <td></td>
+            <td colspan="3" rowspan="4">
+              <p>_______________________</p>
+                <p>FIRMA DE CONFORMIDAD</p>
+            </td>
+            <td></td>
+
+          </tr>
+          <tr>
+
+
+          </tr>
+          <tr>
+
+          </tr>
+          <tr>
+
+          </tr>
+          <tr>
+
+            <td colspan="10"><p></p></td>
+
+          </tr>
+
+          <tr>
+            <td colspan="3"></td>
+            <td colspan="2">
+              <button type="submit" name="guardar-nomina">Guardar</button>
+            </td>
+            <td colspan="2">
+            <button type="reset" name="cancelar-nomina">Reiniciar</button>
+            </td>
+            <td colspan="3"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div >
+        <button type="button" name="cancelar">Cancelar</button>
+      </div>
+    </form>
+
+    </div>
+
+    <footer class="flexdad linkbar ">
+      <div class="bottom-menu">
+
+      <ul class="link-menu">
+        <li><a href="#">
+          <span>Link a politica y privacidad</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a terminos y condiciones</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a bolsa de trabajo</span>
+        </a> </li>
+      </ul>
+    </div>
+
+    </footer>
+  </body>
+</html>
