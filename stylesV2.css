@@ -1,0 +1,1232 @@
+body{
+  padding-top:100px;
+  font-size: 16px;
+}
+
+p{
+  margin: 5px,10px,5px,10px;
+  text-align: justify;
+}
+
+
+h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+div{
+  clear: both;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+table{
+  border-collapse: collapse;
+  margin-bottom: 13px;
+}
+
+th, td{
+  text-align: center;
+}
+
+/*th,td {
+   text-align: center;
+   border-width: 2px;
+   border-style: solid;
+   border-color: black;
+   font-size: 120%
+}*/
+
+.wishlist-table{
+  border-spacing: 9px;
+  border-collapse: separate;
+}
+
+.wishlist-row{
+  border-top: 2px ridge gray;
+}
+
+.inside-wish{
+  font-weight: 700;
+  font-size: 105%;
+  text-align: justify;
+}
+
+.presentable{
+  color: #778899;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-left: 30px;
+
+}
+
+.AcercaDe{
+  font-weight: 900;
+  color: #FFDAB9;
+  font-size: 40px;
+}
+
+.dentro{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.flexdad{
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+}
+
+.descripcion-form{
+  float: left;
+  margin-top: 7%;
+}
+
+.horicenter{
+  display: table;
+  margin: 3% auto;
+}
+
+.filtros{
+  padding: 30px 30px 30px 30px;
+  position: absolute;
+  float: left;
+  background:transparent;
+}
+
+.imgTabla{
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.slide_trabajos{
+  width:50%;
+  height:30%;
+  margin: 0 auto;
+}
+.slide_trabajos img{
+  width:100%;
+  height:75%;
+}
+
+.slide_productos{
+  width:200px;
+  height:110px;
+  float: left;
+}
+
+.dentro{
+  position: relative;
+}
+
+
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+    background: url(img/logo.png) no-repeat ;
+    background-size: auto;
+    width: 129px;
+    height: 100px;
+}
+
+
+.navbar{
+  height: 15%;
+  background: #3D3D3D;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  min-height: 100px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 10px -8px yellow;
+}
+.navmenu li {
+    float: left;
+    margin-left: 0;
+    list-style: none;
+}
+
+.navmenu li a{
+  position: relative;
+  display: block;
+  color: #656565;
+  line-height: 1.875rem;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  padding: 0.625rem 0.78125rem 0.3125rem;
+}
+.navbar-header {
+    float: left;
+    margin-left: 75px;
+    margin-top: 0;
+    width: 140px;
+}
+.navbar_logo{
+  float: left;
+  margin-left: 75px;
+  margin-top: 0;
+  width: 140px;
+  padding-right: 40%
+}
+
+.topmenu{
+    display: inline ;
+    float: right;
+    height: auto;
+    padding-bottom: 0;
+    overflow: visible;
+    max-height: 340px;
+    padding-right: 3px;
+    padding-left: 15px;
+    margin-top: 50px;
+}
+
+.listanavmenu {
+    margin-left: 0;
+    margin-top: 10px;
+}
+.navmenu{
+    margin: 7.5px -15px;
+}
+@media only screen and (min-width: 1025px){
+  .navmenu {
+      float: right;
+    }
+}
+@media only screen and (min-width: 981px){
+  .navmenu {
+      position: static;
+      width: auto;
+      height: auto;
+      margin-bottom: 0;
+      background: none;
+      overflow: visible;
+      margin-left: -5px !important;
+      margin-right: -5px;
+  }
+}
+
+.linkbar{
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.bottom-menu{
+  display: inline ;
+  float: right;
+  height: auto;
+  overflow: visible;
+  margin: 0 auto;
+
+}
+
+.link-menu {
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin-top: 0;
+  clear: both;
+}
+.link-menu li{
+  float: left;
+  list-style: none;
+}
+.link-menu li a{
+  position: relative;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  padding: 0.625rem 0.78125rem 0.3125rem;
+}
+
+
+.imgTabla{
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.regEmpleados
+{
+  padding: 1% 20% 1% 20%;
+  text-align: center;
+  clear:both;
+}
+
+.caption-style{
+  text-align: center;
+  padding: 2% 10%;
+  font-size: 200%;
+}
+.table-margin{
+  margin: auto;
+}
+
+.tabla-prueba{
+   background-color: forestgreen;
+}
+
+.tabla-empleados
+{
+  margin:50px auto;
+}
+
+.tabla-empleados td{
+  padding: 10px;
+}
+
+.non-visible-th{
+  border-width: 0;
+}
+
+.table-button{
+  border-width: 0;
+}
+.Confirmacion_Elim{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: auto;
+  border-style: ridge;
+  border-width: 1px;
+  border-color: #B0C4DE;
+  padding: 2%;
+  align-items: center;
+
+    text-align: center;
+}
+.Confirmacion_Elim ul{
+  padding: 0;
+}
+.Confirmacion_Elim ul li{
+  display: inline;
+  list-style: none;
+}
+
+.imgProductsS{
+  width: 115px;
+  height: 115px;
+}
+.imgProductsB{
+  width: 350px;
+  height: 350px;
+}
+
+.ViewImage{
+  position: fixed;
+  top: 23.5%;
+  left: 2.6%;
+  border-spacing: 7.5px;
+}
+
+.mouseOver{
+  width: 200px;
+  height: 200px;
+}
+
+.BarOpc{
+  position: relative;
+  float: right;
+  top: 37.6%;
+}
+
+.opc{
+  background: black;
+}
+
+/*Baja de productos*/
+.centro{
+  position: absolute;
+  top: 18%;
+  left: 6%
+}
+
+.centroModificacion{
+  position: absolute;
+  top: 18%;
+  left: 28%
+}
+
+.centroContacto{
+  position: absolute;
+  top: 18%;
+  left: 22%;
+}
+
+.arial{
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+}
+
+.deleteText{
+  font-family: arial;
+  font-weight: bold;
+}
+
+
+.tableDelete{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  border-spacing: 40px;
+  border-style: solid;
+  border-radius: 9px;
+  background-color: inherit;
+}
+
+
+.contacto{
+  position: absolute;
+  top: 500px;
+  left: 30px;
+}
+
+.box{
+  padding: 10px 10px 10px 10px;
+  background: lightblue;
+  font: caption;
+  color: black;
+}
+
+.boxTop{
+  padding: 10px 10px 10px 10px;
+  background: lightblue;
+  font-weight:bold;
+  color: black;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.boxBottom{
+  padding: 10px 10px 10px 10px;
+  background: lightblue;
+  color: black;
+  font: caption;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.bolded-capt{
+  font:150% sans-serif;
+  font-weight: bold;
+}
+
+.tableimg{
+width: 300px;
+height: 300px;
+border-radius: 7px;
+}
+
+.tableText{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.barInf{
+  background:lightblue;
+  border-radius: 9px;
+}
+
+.NextPage{
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+.middlebar{
+  height: 55px;
+  background: #ACFA58;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+
+.linkbarServicesUp{
+  position: relative;
+  top: 730px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.linkbarContactUp{
+  position: relative;
+  top: 660px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.linkbarServicesMod{
+  position: relative;
+  top: 860px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.TextoFormulario{
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.formularyTable{
+  margin: 7% auto;
+  border-spacing: 40px;
+  border-style: solid;
+  border-radius: 9px;
+  background-color: inherit;
+}
+
+.styleTextArea{
+  width:400px;
+  height:100px;
+  border: 2px
+  solid #990000;
+  border-radius: 9px;
+}
+
+
+.styleName{
+  font-size: 80%;
+  width:25%;
+  height:15%;
+  border: 2px
+  solid #990000;
+  border-radius: 9px;
+}
+
+.linkbarFormulary{
+  position: relative;
+  top: 580px;
+  display: flex;
+  max-width: 100%;
+  padding: 10px, 5px;
+  height: 35px;
+  background: #DCDCDC;
+}
+
+.tablestyle{
+  position: absolute;
+  top: 20.5%;
+  left: 23%;
+  border-spacing: 25px;
+  border-style: double;
+  border-radius: 9px;
+}
+
+.id-modif-table{
+  font-weight: bold;
+}
+
+.id-search-table{
+  font-style: italic;
+  font-weight: bold;
+  color: blue;
+
+}
+
+#container {
+  overflow: hidden;
+  width: 100%;
+}
+#cant{
+  text-align: center;
+}
+
+#nombre{
+  width: 15%;
+  height: 10%;
+}
+
+#apellidopat{
+  width: 15%;
+  height: 10%;
+}
+
+#apellidomat{
+  width: 15%;
+  height: 10%;
+}
+
+#mail{
+width: 70%;
+height: 10%;
+}
+
+#reg{
+  float: right;
+  font-size: 80%;
+  width: 20%;
+  height: 20%;
+}
+
+#regprom{
+  float: right;
+  font-size: 80%;
+  height: 20%;
+}
+
+#reset{
+  float: right;
+  font-size: 80%;
+  width: 20%;
+  height: 20%;
+}
+
+/* Compatibilidad con resolucion usual de un smartphone base de transformacion:3.33*/
+@media only screen and (max-width: 360px) and (max-height: 640px) {
+  body{
+    padding-top:30px;
+    font-size: 5px;
+  }
+
+  p{
+    margin: 1.5px,3px,1.5px,3px;
+    text-align: justify;
+  }
+
+  h2{
+    margin-top: 6px;
+    margin-bottom: 3px;
+  }
+
+  div{
+    clear: both;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+  }
+
+  table{
+    border-collapse: collapse;
+    margin-bottom: 4px;
+  }
+
+  .wishlist-table{
+    border-spacing: 2.5px;
+    border-collapse: separate;
+  }
+
+  .presentable{
+    color: #778899;
+    font-size: 5px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-left: 9px;
+
+  }
+
+  .AcercaDe{
+    font-weight: 900;
+    color: #FFDAB9;
+    font-size: 12px;
+  }
+
+  .dentro{
+    margin-top: 3px;
+    margin-left: 4.5px;
+  }
+
+  .flexdad{
+    display: flex;
+    max-width: 100%;
+    padding: 3px, 1.5px;
+  }
+
+  .filtros{
+    padding: 9px 9px 9px 9px;
+    position: absolute;
+    float: left;
+    background:transparent;
+  }
+
+  .slide_productos{
+    width:60px;
+    height:33px;
+    float: left;
+  }
+
+  .navbar-brand {
+      float: left;
+      font-size: 5px;
+      line-height: 6px;
+      background: url(img/logo.png) no-repeat ;
+      background-size: auto;
+      width: 38.5px;
+      height: 30px;
+  }
+
+
+  .navbar{
+    height: 15%;
+    background: #3D3D3D;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    min-height: 30px;
+    margin-bottom: 6px;
+    box-shadow: 0px 1.5px 3px -2.4px yellow;
+  }
+
+  .navbar-header {
+      float: left;
+      margin-left: 22.5px;
+      margin-top: 0;
+      width: 42px;
+  }
+
+  .navbar_logo{
+    float: left;
+    margin-left: 22.5px;
+    margin-top: 0;
+    width: 42px;
+    padding-right: 40%
+  }
+
+  .topmenu{
+      display: inline ;
+      float: right;
+      height: auto;
+      padding-bottom: 0;
+      overflow: visible;
+      max-height: 102px;
+      padding-right: 1px;
+      padding-left: 4.5px;
+      margin-top: 15px;
+  }
+
+  .listanavmenu {
+      margin-left: 0;
+      margin-top: 3px;
+  }
+
+  .navmenu{
+      margin: 2px -4.5px;
+  }
+
+  .linkbar{
+    height: 10.5px;
+    background: #DCDCDC;
+  }
+
+  .tabla-empleados
+  {
+    margin:15px auto;
+  }
+
+  .tabla-empleados td{
+    padding: 3px;
+  }
+
+  .imgProductsS{
+    width: 34.5px;
+    height: 34.5px;
+  }
+
+  .imgProductsB{
+    width: 150px;
+    height: 150px;
+  }
+
+  .ViewImage{
+    position: fixed;
+    top: 23.5%;
+    left: 2.6%;
+    border-spacing: 2px;
+  }
+
+  .mouseOver{
+    width: 60px;
+    height: 60px;
+  }
+
+  .tableDelete{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    border-spacing: 12px;
+    border-style: solid;
+    border-radius: 2.5px;
+    background-color: inherit;
+  }
+
+  .contacto{
+    position: absolute;
+    top: 150px;
+    left: 9px;
+  }
+
+  .box{
+    padding: 3px 3px 3px 3px;
+    background: lightblue;
+    font: caption;
+    color: black;
+  }
+
+  .boxTop{
+    padding: 3px 3px 3px 3px;
+    background: lightblue;
+    font-weight:bold;
+    color: black;
+    border-top-left-radius: 2.5px;
+    border-top-right-radius: 2.5px;
+  }
+
+  .boxBottom{
+    padding: 3px 3px 3px 3px;
+    background: lightblue;
+    color: black;
+    font: caption;
+    border-bottom-left-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+  }
+
+  .tableimg{
+  width: 90px;
+  height: 90px;
+  border-radius: 2px;
+  }
+
+  .tableText{
+    font-family: sans-serif;
+    font-size: 6px;
+    text-align: center;
+  }
+
+  .barInf{
+    background:lightblue;
+    border-radius: 2.5px;
+  }
+
+  .NextPage{
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .middlebar{
+    height: 16.5px;
+    background: #ACFA58;
+    border-bottom-left-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+  }
+
+  .linkbarServicesUp{
+    position: relative;
+    top: 219px;
+    display: flex;
+    max-width: 100%;
+    padding: 3px, 1.5px;
+    height: 10.5px;
+    background: #DCDCDC;
+  }
+
+  .linkbarContactUp{
+    position: relative;
+    top: 198px;
+    display: flex;
+    max-width: 100%;
+    padding: 3px, 1.5px;
+    height: 10.5px;
+    background: #DCDCDC;
+  }
+
+  .linkbarServicesMod{
+    position: relative;
+    top: 258px;
+    display: flex;
+    max-width: 100%;
+    padding: 3px, 1.5px;
+    height: 10.5px;
+    background: #DCDCDC;
+  }
+
+  .TextoFormulario{
+    font-family: sans-serif;
+    font-size: 6px;
+    padding: 1.5px;
+  }
+
+  .formularyTable{
+    margin: 7% auto;
+    border-spacing: 12px;
+    border-style: solid;
+    border-radius: 2.5px;
+    background-color: inherit;
+  }
+
+  .styleTextArea{
+    width:120px;
+    height:30px;
+    border: 2px
+    solid #990000;
+    border-radius: 2.5px;
+  }
+
+  .styleName{
+    font-size: 80%;
+    width:25%;
+    height:15%;
+    border: 2px
+    solid #990000;
+    border-radius: 2.5px;
+  }
+
+  .linkbarFormulary{
+    position: relative;
+    top: 174px;
+    display: flex;
+    max-width: 100%;
+    padding: 3px, 1.5px;
+    height: 10.5px;
+    background: #DCDCDC;
+  }
+
+  .tablestyle{
+    position: absolute;
+    top: 20.5%;
+    left: 23%;
+    border-spacing: 7.5px;
+    border-style: double;
+    border-radius: 2.5px;
+  }
+
+
+
+}
+
+/* Compatibilidad con resolucion usual de una tableta base de transformacion:1.7*/
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+
+  body{
+    padding-top:58.5px;
+    font-size: 3px;
+  }
+
+  p{
+    margin: 3px,6px,3px,6px;
+    text-align: justify;
+  }
+
+  h2{
+    margin-top: 11.5px;
+    margin-bottom: 1.5px;
+  }
+
+  div{
+    clear: both;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  table{
+    border-collapse: collapse;
+    margin-bottom: 7.5px;
+  }
+
+  .wishlist-table{
+    border-spacing: 5px;
+    border-collapse: separate;
+  }
+
+  .presentable{
+    color: #778899;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-left: 17.5px;
+
+  }
+
+  .AcercaDe{
+    font-weight: 900;
+    color: #FFDAB9;
+    font-size: 23.5px;
+  }
+
+  .dentro{
+    margin-top: 5.5px;
+    margin-left: 8.5px;
+  }
+
+  .flexdad{
+    display: flex;
+    max-width: 100%;
+    padding: 5.5px, 3px;
+  }
+
+  .filtros{
+    padding: 17.5px 17.5px 17.5px 17.5px;
+    position: absolute;
+    float: left;
+    background:transparent;
+  }
+
+  .slide_productos{
+    width:117.5px;
+    height:64.5px;
+    float: left;
+  }
+
+  .navbar-brand {
+      float: left;
+      font-size: 10.5px;
+      line-height: 11.5px;
+      background: url(img/logo.png) no-repeat ;
+      background-size: auto;
+      width: 75.5px;
+      height: 58.5px;
+  }
+
+
+  .navbar{
+    height: 15%;
+    background: #3D3D3D;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    min-height: 58.5px;
+    margin-bottom: 11.5px;
+    box-shadow: 0px 3px 9px -4.5px yellow;
+  }
+
+  .navbar-header {
+      float: left;
+      margin-left: 44px;
+      margin-top: 0;
+      width: 82px;
+  }
+
+  .navbar_logo{
+    float: left;
+    margin-left: 44px;
+    margin-top: 0;
+    width: 82px;
+    padding-right: 40%
+  }
+
+  .topmenu{
+      display: inline ;
+      float: right;
+      height: auto;
+      padding-bottom: 0;
+      overflow: visible;
+      max-height: 200px;
+      padding-right: 1.5px;
+      padding-left: 8.5px;
+      margin-top: 29px;
+  }
+
+  .listanavmenu {
+      margin-left: 0;
+      margin-top: 5.5px;
+  }
+
+  .navmenu{
+      margin: 4px -8.5px;
+  }
+
+  .linkbar{
+    height: 20.5px;
+    background: #DCDCDC;
+  }
+
+  .tabla-empleados
+  {
+    margin:29px auto;
+  }
+
+  .tabla-empleados td{
+    padding: 5.5px;
+  }
+
+  .imgProductsS{
+    width: 67.5px;
+    height: 67.5px;
+  }
+
+  .imgProductsB{
+    width: 205.5px;
+    height: 205.5px;
+  }
+
+  .ViewImage{
+    position: fixed;
+    top: 23.5%;
+    left: 2.6%;
+    border-spacing: 4px;
+  }
+
+  .mouseOver{
+    width: 117.5px;
+    height: 117.5px;
+  }
+
+  .tableDelete{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    border-spacing: 23.5px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: inherit;
+  }
+
+  .contacto{
+    position: absolute;
+    top: 294px;
+    left: 17.5px;
+  }
+
+  .box{
+    padding: 5.5px 5.5px 5.5px 5.5px;
+    background: lightblue;
+    font: caption;
+    color: black;
+  }
+
+  .boxTop{
+    padding: 5.5px 5.5px 5.5px 5.5px;
+    background: lightblue;
+    font-weight:bold;
+    color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .boxBottom{
+    padding: 5.5px 5.5px 5.5px 5.5px;
+    background: lightblue;
+    color: black;
+    font: caption;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .tableimg{
+  width: 176px;
+  height: 176px;
+  border-radius: 4px;
+  }
+
+  .tableText{
+    font-family: sans-serif;
+    font-size: 11.5px;
+    text-align: center;
+  }
+
+  .barInf{
+    background:lightblue;
+    border-radius: 5px;
+  }
+
+  .NextPage{
+    padding: 5.5px 5.5px 5.5px 5.5px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .middlebar{
+    height: 32px;
+    background: #ACFA58;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .linkbarServicesUp{
+    position: relative;
+    top: 429px;
+    display: flex;
+    max-width: 100%;
+    padding: 5.5px, 3px;
+    height: 20.5px;
+    background: #DCDCDC;
+  }
+
+  .linkbarContactUp{
+    position: relative;
+    top: 388px;
+    display: flex;
+    max-width: 100%;
+    padding: 6px, 3px;
+    height: 20.5px;
+    background: #DCDCDC;
+  }
+
+  .linkbarServicesMod{
+    position: relative;
+    top: 506px;
+    display: flex;
+    max-width: 100%;
+    padding: 6px, 3px;
+    height: 20.5px;
+    background: #DCDCDC;
+  }
+
+  .TextoFormulario{
+    font-family: sans-serif;
+    font-size: 11.5px;
+    padding: 3px;
+  }
+
+  .formularyTable{
+    margin: 7% auto;
+    border-spacing: 12px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: inherit;
+  }
+
+  .styleTextArea{
+    width:235px;
+    height:58.5px;
+    border: 2px
+    solid #990000;
+    border-radius: 5px;
+  }
+
+  .styleName{
+    font-size: 80%;
+    width:25%;
+    height:15%;
+    border: 2px
+    solid #990000;
+    border-radius: 5px;
+  }
+
+  .linkbarFormulary{
+    position: relative;
+    top: 341px;
+    display: flex;
+    max-width: 100%;
+    padding: 6px, 3px;
+    height: 20.5px;
+    background: #DCDCDC;
+  }
+
+  .tablestyle{
+    position: absolute;
+    top: 20.5%;
+    left: 23%;
+    border-spacing: 14.5px;
+    border-style: double;
+    border-radius: 5px;
+  }
+
+}
