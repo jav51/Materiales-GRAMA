@@ -29,6 +29,7 @@ th, td{
   text-align: center;
 }
 
+
 /*th,td {
    text-align: center;
    border-width: 2px;
@@ -590,7 +591,41 @@ border-radius: 7px;
   border-radius: 9px;
 }
 
+.nomina-headers{
+  background-color: grey;
+}
 
+.nomina-sideborder td{
+  border-style: solid;
+  border-width: 0 1px;
+}
+
+.nomina-topborder td{
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+}
+
+.nomina-bottomborder td{
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+}
+td.bottomborder, .bottomborder td{
+  border-bottom: 1px solid black;
+}
+
+td.nomina-textL,.nomina-textL td{
+  text-align: left;
+  padding-left: 1%
+}
+
+td.nomina-textR, .nomina-textR td{
+  text-align: right;
+  padding-right: 1%;
+}
+
+.numeros-nomina{
+  width: 70%;
+}
 
 #container {
   overflow: hidden;
@@ -620,7 +655,7 @@ width: 70%;
 height: 10%;
 }
 #rfc{
-width: 60%;
+width: 6fo0%;
 height: 10%;
 }
 #direccion{
@@ -646,6 +681,19 @@ height: 10%;
   font-size: 80%;
   width: 20%;
   height: 20%;
+}
+
+#dias-nomina{
+  width: 10%;
+}
+#horas-nomina{
+  width: 10%;
+}
+#periodo-nomina{
+  width: 10%;
+}
+#fecha-nomina{
+  width: 90%;
 }
 
 /* Compatibilidad con resolucion usual de un smartphone base de transformacion:3.33*/
