@@ -1,0 +1,41 @@
+Header
+<header class="flexdad navbar">
+    <div class="dentro logo navbar_logo">
+        <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="topmenu">
+    <ul class="navmenu listanavmenu">
+      <li >
+        <a href="#">
+          <span>Acerca de Nosotros</span>
+        </a>
+      </li>
+      <li >
+        <a href="#">
+          <span>Productos</span>
+        </a>
+    </li>
+      <li >
+        <a href="#">
+          <span>Servicios</span>
+        </a>
+    </li>
+    </ul>
+  </div>
+
+  </header>
+
+Footer
+  <footer class="flexdad linkbar"> Links importantes
+    <ul>
+      <il><a href="#">
+        <span>Link a politica y privacidad</span>
+      </a></il>
+      <il> <a href="#">
+        <span>Link a terminos y condiciones</span>
+      </a></il>
+      <il> <a href="#">
+        <span>Link a bolsa de trabajo</span>
+      </a> </il>
+    </ul>
+  </footer>
