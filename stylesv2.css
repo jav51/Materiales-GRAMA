@@ -575,6 +575,9 @@ td.nomina-textR, .nomina-textR td{
 .numeros-nomina{
   width: 70%;
 }
+.consulta-nomina-busqueda{
+  color: grey;
+}
 
 #container {
   overflow: hidden;
