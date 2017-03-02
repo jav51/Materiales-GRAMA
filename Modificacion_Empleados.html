@@ -36,16 +36,23 @@
 
     <div>
 
-        <form action="formulario.html" method="post">
+        <form method="post" name="Registro_Empleados">
           <table class="formularyTable horicenter">
             <caption></caption>
             <thead></thead>
             <tbody>
+              <tr>
+                <td>
+                  <div class="onsubmit" id="error">
+                      <p>* Por favor, revice que los recuadros en rojo esten correctos</p>
+                  </div>
+                </td>
+              </tr>
                 <tr>
                   <td>
                 <div class="TextoFormulario">
                 <label for="nombre">Nombre</label>
-                <input id="nombre" type="text" name="Nombre" class="styleName" value="Alexis"/>
+                <input id="nombre" type="text" name="Nombre" class="styleNameRegEmp" value="Alexis" onshow="validarVacio(this)" onkeyup="validarVacio(this)" />
                 </div>
                   </td>
                 </tr>
@@ -53,7 +60,7 @@
                   <td>
               <div class="TextoFormulario">
               <label for="apellidos">Apellido Paterno</label>
-              <input id="apellidos" type="text" name="Apellidos" class="styleName" value="Santana"/>
+              <input id="apellidopat" type="text" name="Apellidos" class="styleNameRegEmp" value="Santana" onload="validarVacio(this)" onkeyup="validarVacio(this)"/>
             </div>
                 </td>
               </tr>
@@ -61,7 +68,7 @@
                 <td>
             <div class="TextoFormulario">
             <label for="apellidos">Apellido Materno</label>
-            <input id="apellidos" type="text" name="Apellidos" class="styleName" value="Gonzalez"/>
+            <input id="apellidomat" type="text" name="Apellidos" class="styleNameRegEmp" value="Gonzalez" onload="validarVacio(this)" onkeyup="validarVacio(this)"/>
           </div>
               </td>
             </tr>
@@ -70,7 +77,7 @@
             <div class="TextoFormulario">
 
               <label for="rfc">RFC</label>
-              <input id="rfc" type="text" name="RFC" class="styleName" value="SAGA45678465"/>
+              <input id="rfc" type="text" name="RFC" class="styleNameRegEmp" value="SAGA960921UI1" onload="validarRFC(this)" onkeyup="validarRFC(this)"/>
             </div>
               </td>
             </tr>
@@ -78,7 +85,7 @@
               <td>
             <div class="TextoFormulario">
             <label for="direccion">Direccion</label>
-            <input id="direccion" type="text" name="Direccion" class="styleName" value="Av. Casa Fuerte 204"/>
+            <input id="direccion" type="text" name="Direccion" class="styleNameRegEmp" value="Av. Casa Fuerte 204" onload="validarVacio(this)" onkeyup="validarVacio(this)"/>
           </div>
               </td>
             </tr>
@@ -88,7 +95,7 @@
               <div class="TextoFormulario">
 
                 <label for="mail">Correo</label>
-                <input id="mail" type="email" name="Correo"  class="styleName" value="alexis.s.g@hotmail.com"/>
+                <input id="mail" type="email" name="Correo"  class="styleNameRegEmp" value="alexis.s.g@hotmail.com" onload="validarmail(this)" onkeyup="validarmail(this)"/>
               </div>
               </td>
             </tr>
@@ -98,7 +105,7 @@
 
 
                 <label for="telefono">Telefono</label>
-                <input id="telefono"type="phone" name="Telefono" class="styleName" value="3318406600"/>
+                <input id="telefono"type="phone" name="Telefono" class="styleNameRegEmp" value="3318406600" onload="validarTelefono(this)" onkeyup="validarTelefono(this)"/>
               </div>
               </td>
             </tr>
@@ -106,7 +113,7 @@
             <tr>
               <td>
               <div>
-                <button type="submit" >Modificar</button>
+                <button type="button" onclick="Registrar()">Modificar</button>
               </div>
               </td>
             </tr>
@@ -133,5 +140,92 @@
     </div>
 
     </footer>
+
+    <script type="text/javascript">
+    console.log("javascript");
+
+    var error = document.getElementById('error');
+
+      function  validarVacio(input)
+      {
+        if(input.value.length == 0)
+        {
+          input.className="styleNameErrorRegEmp";
+        }
+        else{
+          input.className="styleNameAceptadoRegEmp";
+        }
+      }
+
+
+      function validarRFC(input)
+      {
+        var RFCpattern = /^([A-ZÑ\x26]{3,4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1]))((-)?([A-Z\d]{3}))?$/;
+        if(!RFCpattern.test(input.value))
+        {
+          input.className="styleNameErrorRegEmp";
+          console.log("hi");
+        }
+        else{
+          input.className="styleNameAceptadoRegEmp";
+        }
+      }
+
+      function validarmail(input)
+      {
+        var mailpattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if(!mailpattern.test(input.value))
+        {
+          input.className="styleNameErrorRegEmp";
+          console.log("hi");
+        }
+        else{
+          input.className="styleNameAceptadoRegEmp";
+        }
+      }
+
+      function validarTelefono(input)
+      {
+        var telefonopattern = /^[0-9]{10}$/;
+        if(!telefonopattern.test(input.value))
+        {
+          input.className="styleNameErrorRegEmp";
+          console.log("hi");
+        }
+        else{
+          input.className="styleNameAceptadoRegEmp";
+        }
+      }
+
+      function Registrar(){
+
+        var nombre = document.Registro_Empleados.nombre;
+        var apellidopat = document.Registro_Empleados.apellidopat;
+        var apellidomat = document.Registro_Empleados.apellidomat;
+        var rfc = document.Registro_Empleados.rfc;
+        var direccion = document.Registro_Empleados.direccion;
+        var correo = document.Registro_Empleados.mail;
+        var telefono = document.Registro_Empleados.telefono;
+
+        var registro=[nombre,apellidopat,apellidomat,rfc,direccion,correo,telefono];
+
+        for(var i=0;i<registro.length;i++){
+          if(registro[i].className=="styleNameErrorRegEmp"){
+
+            error.className ="onsubmitDenied";
+            registro[i].focus();
+            registro[i].className = "styleNameErrorRegEmp";
+            return 0;
+          }
+          else{
+            registro[i].className="styleNameAceptadoRegEmp";
+            error.className="onsubmit";
+          }
+        }
+        document.Registro_Empleados.submit();
+
+      }
+
+    </script>
   </body>
 </html>
