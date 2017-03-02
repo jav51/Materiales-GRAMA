@@ -212,6 +212,7 @@ th, td{
 .linkbar{
   height: 35px;
   background: #DCDCDC;
+  margin-top: 2%;
 }
 
 .bottom-menu{
@@ -478,6 +479,17 @@ border-radius: 7px;
   background: #DCDCDC;
 }
 
+.linkhead{
+  text-decoration: none;
+  color: black;
+}
+
+.dynbox:hover{
+  width: 40%;
+  background-color: #E6E6FA;
+}
+
+
 .TextoFormulario{
   font-family: sans-serif;
   font-size: 20px;
@@ -636,7 +648,7 @@ border-radius: 7px;
 @media only screen and (max-width: 360px) and (max-height: 640px) {
   body{
     padding-top:30px;
-    font-size: 5px;
+    font-size: 8px;
   }
 
   p{
@@ -959,7 +971,7 @@ border-radius: 7px;
 
   body{
     padding-top:58.5px;
-    font-size: 3px;
+    font-size: 5px;
   }
 
   p{
