@@ -36,16 +36,23 @@
 
 <div>
 
-    <form action="formulario.html" method="post">
+    <form method="post" name="Registro_Empleados">
       <table class="formularyTable horicenter">
         <caption></caption>
         <thead></thead>
         <tbody>
+          <tr>
+            <td>
+              <div class="onsubmit" id="error">
+                  <p>* Por favor, complete correctamente los recuadros en rojo</p>
+              </div>
+            </td>
+          </tr>
             <tr>
               <td>
             <div class="TextoFormulario">
             <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" name="Nombre" class="styleName"/>
+            <input id="nombre" type="text" name="Nombre" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
             </div>
               </td>
             </tr>
@@ -53,7 +60,7 @@
               <td>
           <div class="TextoFormulario">
           <label for="apellidos">Apellido Paterno</label>
-          <input id="apellidos" type="text" name="Apellidos" class="styleName"/>
+          <input id="apellidopat" type="text" name="Apellidos" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
         </div>
             </td>
           </tr>
@@ -61,7 +68,7 @@
             <td>
         <div class="TextoFormulario">
         <label for="apellidos">Apellido Materno</label>
-        <input id="apellidos" type="text" name="Apellidos" class="styleName"/>
+        <input id="apellidomat" type="text" name="Apellidos" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
       </div>
           </td>
         </tr>
@@ -70,7 +77,7 @@
         <div class="TextoFormulario">
 
           <label for="rfc">RFC</label>
-          <input id="rcf" type="text" name="RFC" class="styleName"/>
+          <input id="rfc" type="text" name="RFC" class="styleNameRegEmp" onkeyup="validarRFC(this)"/>
         </div>
           </td>
         </tr>
@@ -78,7 +85,7 @@
           <td>
         <div class="TextoFormulario">
         <label for="direccion">Direccion</label>
-        <input id="direccion" type="text" name="Direccion" class="styleName"/>
+        <input id="direccion" type="text" name="Direccion" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
       </div>
           </td>
         </tr>
@@ -88,7 +95,7 @@
           <div class="TextoFormulario">
 
             <label for="mail">Correo</label>
-            <input id="mail" type="email" name="Correo"  class="styleName"/>
+            <input id="mail" type="email" name="Correo"  class="styleNameRegEmp" onkeyup="validarmail(this)"/>
           </div>
           </td>
         </tr>
@@ -97,8 +104,8 @@
           <div class="TextoFormulario">
 
 
-            <label for="telefono">Telefono</label>
-            <input id="telefono"type="phone" name="Telefono" class="styleName" />
+            <label for="telefono">Telefono +52</label>
+            <input id="telefono"type="phone" name="Telefono" class="styleNameRegEmp" onkeyup="validarTelefono(this)"/>
           </div>
           </td>
         </tr>
@@ -107,7 +114,7 @@
           <div class="TextoFormulario">
 
             <label for="pass">Contraseña</label>
-            <input id="pass" type="password" name="Contraseña" pattern="" class="styleName" />
+            <input id="pass" type="password" name="Contraseña" pattern="" class="styleNameRegEmp" onkeyup="validarPass(this)"/>
           </div>
           </td>
         </tr>
@@ -117,7 +124,7 @@
           <div class="TextoFormulario">
 
             <label class="Cpass" for="Cpass">Confirmar contraseña</label>
-            <input id="Cpass" type="password" name="Confirmar" pattern="" class="styleName" />
+            <input id="Cpass" type="password" name="Confirmar" pattern="" class="styleNameRegEmp" onkeyup="confirmarPass(this)" />
           </div>
           </td>
         </tr>
@@ -125,7 +132,7 @@
         <tr>
           <td>
           <div>
-            <button type="submit" >Registrar</button>
+            <button type="button" onclick="Registrar()">Registrar</button>
           </div>
           </td>
         </tr>
@@ -155,6 +162,118 @@
         </div>
 
         </footer>
+
+        <script type="text/javascript">
+        console.log("javascript");
+
+        var error = document.getElementById('error');
+
+          function  validarVacio(input)
+          {
+            if(input.value.length == 0)
+            {
+              input.className="styleNameErrorRegEmp";
+              console.log("hi");
+            }
+            else{
+              input.className="styleNameAceptadoRegEmp";
+            }
+          }
+
+          function  validarPass(input)
+          {
+            if(input.value.length <= 8)
+            {
+              input.className="styleNameErrorRegEmp";
+              console.log("hi");
+            }
+            else{
+              input.className="styleNameAceptadoRegEmp";
+            }
+          }
+          function  confirmarPass(input)
+          {
+            if(input.value != document.getElementById('pass').value)
+            {
+              input.className="styleNameErrorRegEmp";
+              console.log("hi");
+            }
+            else{
+              input.className="styleNameAceptadoRegEmp";
+            }
+          }
+
+          function validarRFC(input)
+          {
+            var RFCpattern = /^([A-ZÑ\x26]{3,4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1]))((-)?([A-Z\d]{3}))?$/;
+            if(!RFCpattern.test(input.value))
+            {
+              input.className="styleNameErrorRegEmp";
+              console.log("hi");
+            }
+            else{
+              input.className="styleNameAceptadoRegEmp";
+            }
+          }
+
+          function validarmail(input)
+          {
+            var mailpattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            if(!mailpattern.test(input.value))
+            {
+              input.className="styleNameErrorRegEmp";
+              console.log("hi");
+            }
+            else{
+              input.className="styleNameAceptadoRegEmp";
+            }
+          }
+
+          function validarTelefono(input)
+          {
+            var telefonopattern = /^[0-9]{10}$/;
+            if(!telefonopattern.test(input.value))
+            {
+              input.className="styleNameErrorRegEmp";
+              console.log("hi");
+            }
+            else{
+              input.className="styleNameAceptadoRegEmp";
+            }
+          }
+
+          function Registrar(){
+
+            var nombre = document.Registro_Empleados.nombre;
+            var apellidopat = document.Registro_Empleados.apellidopat;
+            var apellidomat = document.Registro_Empleados.apellidomat;
+            var rfc = document.Registro_Empleados.rfc;
+            var direccion = document.Registro_Empleados.direccion;
+            var correo = document.Registro_Empleados.mail;
+            var telefono = document.Registro_Empleados.telefono;
+            var pass = document.Registro_Empleados.pass;
+            var cpass = document.Registro_Empleados.Cpass;
+
+            var registro=[nombre,apellidopat,apellidomat,rfc,direccion,correo,telefono,pass,cpass];
+
+            for(var i=0;i<registro.length;i++){
+              if(registro[i].className!="styleNameAceptadoRegEmp"){
+
+                error.className ="onsubmitDenied";
+                registro[i].focus();
+                registro[i].className = "styleNameErrorRegEmp";
+                return 0;
+              }
+              else{
+                registro[i].className="styleNameAceptadoRegEmp";
+                error.className="onsubmit";
+              }
+            }
+            document.Registro_Empleados.submit();
+
+          }
+
+        </script>
 
   </body>
 </html>

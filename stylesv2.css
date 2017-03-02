@@ -505,9 +505,28 @@ border-radius: 7px;
   font-size: 80%;
   width:25%;
   height:15%;
-  border: 2px
-  solid #990000;
+  border: 2px solid #990000;
   border-radius: 9px;
+  padding: 2px;
+  padding-top: 4px;
+}
+.styleNameAceptado{
+  font-size: 80%;
+  width:25%;
+  height:15%;
+  border: 2px solid #04B404;
+  border-radius: 9px;
+  padding: 2px;
+  padding-top: 4px;
+}
+.styleNameError{
+  font-size: 80%;
+  width:25%;
+  height:15%;
+  border: 2px solid #FF0000;
+  border-radius: 9px;
+  padding: 2px;
+  padding-top: 4px;
 }
 
 .linkbarFormulary{
@@ -540,6 +559,50 @@ border-radius: 7px;
 
 }
 
+.styleNameRegEmp{
+  font-size: 80%;
+  width:40%;
+  height:10%;
+  border: 2px solid #990000;
+  border-radius: 9px;
+  padding: 2px;
+  padding-top: 4px;
+}
+
+.styleNameErrorRegEmp{
+  font-size: 80%;
+  width:40%;
+  height:10%;
+  border: 2px solid #FF0000;
+  border-radius: 9px;
+  padding: 2px;
+  padding-top: 4px;
+}
+.styleNameAceptadoRegEmp{
+  font-size: 80%;
+  width:40%;
+  height:10%;
+  border: 2px solid #04B404;
+  border-radius: 9px;
+  padding: 2px;
+  padding-top: 4px;
+}
+.TextoFormularioError{
+  font-family: sans-serif;
+  color: red;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.onsubmit{
+  visibility: hidden;
+}
+.onsubmitDenied{
+  background-color: #FA5858;
+  color:#610B0B;
+  visibility: visible;
+}
+
 #container {
   overflow: hidden;
   width: 100%;
@@ -548,25 +611,6 @@ border-radius: 7px;
   text-align: center;
 }
 
-#nombre{
-  width: 15%;
-  height: 10%;
-}
-
-#apellidopat{
-  width: 15%;
-  height: 10%;
-}
-
-#apellidomat{
-  width: 15%;
-  height: 10%;
-}
-
-#mail{
-width: 70%;
-height: 10%;
-}
 
 #reg{
   float: right;
