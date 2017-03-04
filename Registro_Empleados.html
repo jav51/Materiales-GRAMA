@@ -104,7 +104,12 @@
           <div class="TextoFormulario">
 
 
-            <label for="telefono">Telefono +52</label>
+            <label for="telefono">Telefono </label>
+            <select name="lada" id="lada" class="formlada" onchange="validarLada(this)">
+              <option value="Lada">Lada</option>
+              <option value="+1">+1</option>
+              <option value="+52">+52</option>
+            </select>
             <input id="telefono"type="phone" name="Telefono" class="styleNameRegEmp" onkeyup="validarTelefono(this)"/>
           </div>
           </td>
@@ -179,6 +184,17 @@
               input.className="styleNameAceptadoRegEmp";
             }
           }
+          function  validarLada(input)
+          {
+            if(input.selectedIndex != 0)
+            {
+              input.className="formladaAceptado";
+              console.log("hi");
+            }
+            else{
+              input.className="formladaDenied";
+            }
+          }
 
           function  validarPass(input)
           {
@@ -250,23 +266,34 @@
             var rfc = document.Registro_Empleados.rfc;
             var direccion = document.Registro_Empleados.direccion;
             var correo = document.Registro_Empleados.mail;
+            var lada = document.Registro_Empleados.lada;
             var telefono = document.Registro_Empleados.telefono;
             var pass = document.Registro_Empleados.pass;
             var cpass = document.Registro_Empleados.Cpass;
 
-            var registro=[nombre,apellidopat,apellidomat,rfc,direccion,correo,telefono,pass,cpass];
+
+            var registro=[nombre,apellidopat,apellidomat,rfc,direccion,correo,lada,telefono,pass,cpass];
 
             for(var i=0;i<registro.length;i++){
-              if(registro[i].className!="styleNameAceptadoRegEmp"){
+              if(registro[i].className!="styleNameAceptadoRegEmp"&&registro[i].className!="formladaAceptado"){
 
                 error.className ="onsubmitDenied";
                 registro[i].focus();
-                registro[i].className = "styleNameErrorRegEmp";
+                if(registro[i]!= lada){
+                registro[i].className = "styleNameErrorRegEmp";}
+                else{
+                  registro[i].className = "formladaDenied";
+                }
                 return 0;
               }
               else{
+                if(registro[i]!= lada){
                 registro[i].className="styleNameAceptadoRegEmp";
-                error.className="onsubmit";
+                error.className="onsubmit";}
+                else {
+                  registro[i].className="formladaAceptado";
+                  error.className="onsubmit";
+                }
               }
             }
             document.Registro_Empleados.submit();

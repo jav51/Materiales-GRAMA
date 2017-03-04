@@ -528,7 +528,7 @@ border-radius: 7px;
   height:15%;
   border: 2px solid #04B404;
   border-radius: 9px;
-  padding: 2px;
+  padding: 2pxon;
   padding-top: 4px;
 }
 .styleNameError{
@@ -615,6 +615,24 @@ border-radius: 7px;
   visibility: visible;
 }
 
+.formlada{
+  height: 10%;
+  width: 15%;
+}
+
+.formladaAceptado{
+  height: 10%;
+  width: 15%;
+  border-color: #04B404;
+  border-width: thin;
+}
+
+.formladaDenied{
+  height: 10%;
+  width: 15%;
+  border-color: #FF0000;
+  border-width: thin;
+}
 #container {
   overflow: hidden;
   width: 100%;
