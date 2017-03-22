@@ -641,12 +641,25 @@ border-radius: 7px;
   text-align: center;
 }
 
+#inipass{
+  width: 50%;
+}
+
+#inimail{
+  width: 40%;
+}
 
 #reg{
   float: right;
   font-size: 80%;
   width: 20%;
   height: 20%;
+}
+
+#ini{
+  font-size: 80%;
+  width: 36%;
+  height: 15%;
 }
 
 #regprom{
