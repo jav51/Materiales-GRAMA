@@ -90,6 +90,35 @@ LOCK TABLES `detallenomina` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `detallewishlist`
+--
+
+DROP TABLE IF EXISTS `detallewishlist`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `detallewishlist` (
+  `idDetalleWishlist` int(11) NOT NULL,
+  `idProducto` int(11) DEFAULT NULL,
+  `idWishlist` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idDetalleWishlist`),
+  KEY `fk_id_producto_idx` (`idProducto`),
+  KEY `fk_id_wishlist_idx` (`idWishlist`),
+  KEY `fk_id_productos_wish_idx` (`idProducto`),
+  CONSTRAINT `fk_id_productos_wish` FOREIGN KEY (`idProducto`) REFERENCES `productos` (`idproductos`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_id_wish` FOREIGN KEY (`idWishlist`) REFERENCES `wishlist` (`idWishlist`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `detallewishlist`
+--
+
+LOCK TABLES `detallewishlist` WRITE;
+/*!40000 ALTER TABLE `detallewishlist` DISABLE KEYS */;
+/*!40000 ALTER TABLE `detallewishlist` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `empleados`
 --
 
@@ -250,6 +279,31 @@ LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `wishlist`
+--
+
+DROP TABLE IF EXISTS `wishlist`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wishlist` (
+  `idWishlist` int(11) NOT NULL,
+  `idUsuario` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idWishlist`),
+  KEY `fk_id_usuario_wish_idx` (`idUsuario`),
+  CONSTRAINT `fk_id_usuario_wish` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`idusuarios`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `wishlist`
+--
+
+LOCK TABLES `wishlist` WRITE;
+/*!40000 ALTER TABLE `wishlist` DISABLE KEYS */;
+/*!40000 ALTER TABLE `wishlist` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -260,4 +314,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-03 22:27:27
+-- Dump completed on 2017-04-04  0:49:23
