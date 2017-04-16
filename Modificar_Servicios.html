@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesv2.css" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header class="flexdad navbar">
+      <div class="dentro logo navbar_logo">
+          <a class="navbar-brand" href="#" alt="logo"></a>
+      </div>
+      <div class="topmenu">
+      <ul class="navmenu listanavmenu">
+        <li >
+          <a href="#">
+            <span>Acerca de Nosotros</span>
+          </a>
+        </li>
+        <li >
+          <a href="#">
+            <span>Productos</span>
+          </a>
+      </li>
+        <li >
+          <a href="#">
+            <span>Servicios</span>
+          </a>
+      </li>
+      </ul>
+    </div>
+    <div class="sesionmenu">
+      <a href="#">
+        <span>Iniciar Sesion</span>
+      </a>
+    </div>
+    </header>
+
+    <h1 class="regEmpleados">Modificacion de Servicios</h1>
+
+    <div>
+
+        <form method="post" name="Registro_Empleados">
+          <table class="formularyTable horicenter">
+            <caption></caption>
+            <thead></thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="onsubmit" id="error">
+                      <p>* Por favor, revise que los recuadros en rojo esten correctos</p>
+                  </div>
+                </td>
+              </tr>
+                <tr>
+                  <td>
+                <div class="TextoFormulario">
+                <label for="nombre">Nombre del servicio</label>
+                <input id="Nombre" type="text" name="Nomre" class="styleNameRegEmp" />
+                </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="TextoFormulario">
+                    <label for="Descripcion">Descripción del Servicio</label>
+                    <textarea class="styleTextArea" rows="10" cols="33" name="texto" id="Descripcion" placeholder="Escribe una descripcion del servicio"></textarea>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="TextoFormulario">
+                  <label for="">Carga de Imagenes</label>
+                  <input name="uploadedfile" type="file" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="TextoFormulario">
+                <label for="">Carga de Video</label>
+                <input name="uploadedfile" type="file" />
+              </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+              <div>
+                <button type="button" onclick="Registrar()">Modificar</button>
+              </div>
+              </td>
+            </tr>
+            </tbody>
+
+            </form>
+          </table>
+          </div>
+
+    <footer class="flexdad linkbar ">
+      <div class="bottom-menu">
+
+      <ul class="link-menu">
+        <li><a href="#">
+          <span>Link a politica y privacidad</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a terminos y condiciones</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a bolsa de trabajo</span>
+        </a> </li>
+      </ul>
+    </div>
+
+    </footer>
+
+
+    </script>
+  </body>
+</html>
