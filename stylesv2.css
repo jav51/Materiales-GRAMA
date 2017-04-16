@@ -104,7 +104,10 @@ th, td{
   width:50%;
   height:30%;
   margin: 0 auto;
+<<<<<<< HEAD
   padding-bottom: 3%
+=======
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 }
 .slide_trabajos img{
   width:100%;
@@ -112,6 +115,7 @@ th, td{
 }
 
 .slide_productos{
+<<<<<<< HEAD
   width:220px;
   height:120px;
   float: left;
@@ -173,6 +177,13 @@ th, td{
   display: inline;
 }
 
+=======
+  width:200px;
+  height:110px;
+  float: left;
+}
+
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 .dentro{
   position: relative;
 }
@@ -198,8 +209,14 @@ th, td{
   left: 0px;
   min-height: 100px;
   margin-bottom: 20px;
+<<<<<<< HEAD
   box-shadow: 0px 5px 10px -8px yellow;
 }
+=======
+  box-shadow: 0px 8px 10px -8px orange;
+}
+
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 .navmenu li {
     float: left;
     margin-left: 0;
@@ -241,6 +258,7 @@ th, td{
     margin-top: 50px;
 }
 
+<<<<<<< HEAD
 .sesionmenu{
   display: inline;
   float: right;
@@ -259,6 +277,8 @@ th, td{
   text-decoration: none;
 }
 
+=======
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 .listanavmenu {
     margin-left: 0;
     margin-top: 10px;
@@ -287,7 +307,10 @@ th, td{
 .linkbar{
   height: 35px;
   background: #DCDCDC;
+<<<<<<< HEAD
   margin-top: 2%;
+=======
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 }
 
 .bottom-menu{
@@ -318,14 +341,23 @@ th, td{
   padding: 0.625rem 0.78125rem 0.3125rem;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 .imgTabla{
   max-width: 60%;
   max-height: 60%;
 }
 
+<<<<<<< HEAD
 .regEmpleados
 {
   padding: 1% 20% 1% 20%;
+=======
+.regEmpleados{
+  padding: 1%;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
   text-align: center;
   clear:both;
 }
@@ -360,8 +392,13 @@ th, td{
   border-width: 0;
 }
 .Confirmacion_Elim{
+<<<<<<< HEAD
   margin-top: 10%;
   margin-bottom: 10%;
+=======
+  margin-top: 3%;
+  margin-bottom: 3%;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
   margin-left: auto;
   margin-right: auto;
   width: 25%;
@@ -553,6 +590,7 @@ border-radius: 7px;
   background: #DCDCDC;
 }
 
+<<<<<<< HEAD
 .linkhead{
   text-decoration: none;
   color: black;
@@ -564,6 +602,8 @@ border-radius: 7px;
 }
 
 
+=======
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 .TextoFormulario{
   font-family: sans-serif;
   font-size: 20px;
@@ -588,6 +628,7 @@ border-radius: 7px;
 
 
 .styleName{
+<<<<<<< HEAD
   font-size: 80%;
   width:25%;
   height:15%;
@@ -613,6 +654,15 @@ border-radius: 7px;
   border-radius: 9px;
   padding: 2px;
   padding-top: 4px;
+=======
+  padding: 1%;
+  font-size: 80%;
+  width:25%;
+  height:15%;
+  border: 2px
+  solid #990000;
+  border-radius: 9px;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 }
 
 .linkbarFormulary{
@@ -644,6 +694,7 @@ border-radius: 7px;
   color: blue;
 
 }
+<<<<<<< HEAD
 
 .styleNameRegEmp{
   font-size: 80%;
@@ -707,6 +758,47 @@ border-radius: 7px;
   border-color: #FF0000;
   border-width: thin;
 }
+=======
+.nomina-headers{
+  background-color: grey;
+}
+
+.nomina-sideborder td{
+  border-style: solid;
+  border-width: 0 1px;
+}
+
+.nomina-topborder td{
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+}
+
+.nomina-bottomborder td{
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+}
+td.bottomborder, .bottomborder td{
+  border-bottom: 1px solid black;
+}
+
+td.nomina-textL,.nomina-textL td{
+  text-align: left;
+  padding-left: 1%
+}
+
+td.nomina-textR, .nomina-textR td{
+  text-align: right;
+  padding-right: 1%;
+}
+
+.numeros-nomina{
+  width: 70%;
+}
+.consulta-nomina-busqueda{
+  color: grey;
+}
+
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 #container {
   overflow: hidden;
   width: 100%;
@@ -715,6 +807,37 @@ border-radius: 7px;
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+#nombre{
+  width: 15%;
+  height: 10%;
+}
+
+#apellidopat{
+  width: 15%;
+  height: 10%;
+}
+
+#apellidomat{
+  width: 15%;
+  height: 10%;
+}
+
+#mail{
+width: 70%;
+height: 10%;
+}
+
+#rfc{
+width: 60%;
+height: 10%;
+}
+#direccion{
+width: 70%;
+height: 10%;
+}
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 
 #reg{
   float: right;
@@ -736,11 +859,33 @@ border-radius: 7px;
   height: 20%;
 }
 
+<<<<<<< HEAD
+=======
+
+#dias-nomina{
+  width: 10%;
+}
+#horas-nomina{
+  width: 10%;
+}
+#periodo-nomina{
+  width: 10%;
+}
+#fecha-nomina{
+  width: 90%;
+}
+
+
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
 /* Compatibilidad con resolucion usual de un smartphone base de transformacion:3.33*/
 @media only screen and (max-width: 360px) and (max-height: 640px) {
   body{
     padding-top:30px;
+<<<<<<< HEAD
     font-size: 10px;
+=======
+    font-size: 5px;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
   }
 
   p{
@@ -803,8 +948,13 @@ border-radius: 7px;
   }
 
   .slide_productos{
+<<<<<<< HEAD
     width:66.6px;
     height:36.3px;
+=======
+    width:60px;
+    height:33px;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
     float: left;
   }
 
@@ -812,15 +962,24 @@ border-radius: 7px;
       float: left;
       font-size: 5px;
       line-height: 6px;
+<<<<<<< HEAD
       background: url(img/logo.png) ;
       background-size: cover;
+=======
+      background: url(img/logo.png) no-repeat ;
+      background-size: auto;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
       width: 38.5px;
       height: 30px;
   }
 
 
   .navbar{
+<<<<<<< HEAD
     height: 20%;
+=======
+    height: 15%;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
     background: #3D3D3D;
     position: fixed;
     top: 0px;
@@ -1063,7 +1222,11 @@ border-radius: 7px;
 
   body{
     padding-top:58.5px;
+<<<<<<< HEAD
     font-size: 13px;
+=======
+    font-size: 3px;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
   }
 
   p{
@@ -1126,8 +1289,13 @@ border-radius: 7px;
   }
 
   .slide_productos{
+<<<<<<< HEAD
     width:129.4px;
     height:70.5px;
+=======
+    width:117.5px;
+    height:64.5px;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
     float: left;
   }
 
@@ -1135,15 +1303,24 @@ border-radius: 7px;
       float: left;
       font-size: 10.5px;
       line-height: 11.5px;
+<<<<<<< HEAD
       background: url(img/logo.png) ;
       background-size: cover;
+=======
+      background: url(img/logo.png) no-repeat ;
+      background-size: auto;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
       width: 75.5px;
       height: 58.5px;
   }
 
 
   .navbar{
+<<<<<<< HEAD
     height: 20%;
+=======
+    height: 15%;
+>>>>>>> 4f0e7b30e9b801ed7ad12483296dcc16214d2658
     background: #3D3D3D;
     position: fixed;
     top: 0px;
