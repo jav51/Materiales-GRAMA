@@ -46,7 +46,7 @@
           <tr>
             <td>
               <div class="onsubmit" id="error">
-                  <p>* Por favor, complete correctamente los recuadros en rojo</p>
+                  <p>* Por favor, revice que los datos sean correctos</p>
               </div>
             </td>
           </tr>
@@ -54,7 +54,7 @@
             <td>
               <div class="TextoFormulario">
                 <label for="mail">Correo electronico:</label>
-                <input class=" styleName" type="email" id="inimail" name="correo" onkeyup="validarmail(this)"/>
+                <input class=" styleName" type="email" id="inimail" name="correo" />
           </div>
           </td>
           </tr>
@@ -63,7 +63,7 @@
 
               <div class="TextoFormulario">
               <label for="pass">Contraseña: </label>
-              <input class=" styleName" type="password" id="inipass" name="contraseña" onkeyup="validarPass(this)"/>
+              <input class=" styleName" type="password" id="inipass" name="contraseña"/>
             </div>
             </td>
           </tr>
@@ -75,7 +75,7 @@
           <tr>
             <td>
             <div class="TextoFormulario">
-            <button type="button" name="registrar" value="Registrar" id="ini">Iniciar sesión</button>
+            <button type="button" name="registrar" value="Registrar" id="ini" onclick="validarVacio(inimail),validarVacio(inipass)">Iniciar sesión</button>
             </div>
           </td>
           </tr>
@@ -109,39 +109,7 @@
         if(input.value.length == 0)
         {
           input.className="styleNameError";
-        }
-        else{
-          input.className="styleNameAceptado";
-        }
-      }
-
-      function  validarPass(input)
-      {
-        if(input.value.length <= 8)
-        {
-          input.className="styleNameError";
-        }
-        else{
-          input.className="styleNameAceptado";
-        }
-      }
-      function  confirmarPass(input)
-      {
-        if(input.value != document.getElementById('pass').value)
-        {
-          input.className="styleNameError";
-        }
-        else{
-          input.className="styleNameAceptado";
-        }
-      }
-
-      function validarmail(input)
-      {
-        var mailpattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        if(!mailpattern.test(input.value))
-        {
-          input.className="styleNameError";
+          error.className ="onsubmitDenied";
         }
         else{
           input.className="styleNameAceptado";
