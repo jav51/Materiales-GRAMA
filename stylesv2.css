@@ -102,11 +102,15 @@ th, td{
 
 .slideshow-body{
   max-width: 1000px;
-  position: relative;
+  position: block;
   margin: auto;
 }
 
 .slide{
+  display: none;
+}
+
+.autoslide{
   display: none;
 }
 
@@ -120,6 +124,7 @@ th, td{
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+
 }
 
 @keyframes fade {
@@ -129,8 +134,10 @@ th, td{
 
 
 .slide_imagen{
-  width: 70%;
-  height: 75%;
+  max-height: 400px;
+  min-height: 390px;
+  max-width: 500px;
+  min-width: 490px;
 }
 
 .numero_slide{

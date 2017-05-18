@@ -43,19 +43,22 @@
 <div class="horicenter">
   <h1>Nuestros trabajos </h1>
 </div>
-    <div class="flexdad">
+
+  <div class="slideshow-body">
+
+    <div class="autoslide slide_cambio">
       <img class="horicenter slide_imagen"  src="https://microjurisar.files.wordpress.com/2014/11/05.jpg" alt="Trabajo" >
     </div>
 
-    <div class="flexdad">
+    <div class="autoslide slide_cambio">
       <img class="horicenter slide_imagen"  src="http://www.letsprevent.com/wp-content/uploads/riesgos-trabajos-en-cubiert.jpg" alt="Trabajo" >
     </div>
 
-    <div class="flexdad">
+    <div class="autoslide slide_cambio">
       <img class="horicenter slide_imagen"  src="http://www.londres38.cl/1937/articles-82605_recurso_1.jpg" alt="Trabajo" >
     </div>
 
-    <div class="flexdad">
+    <div class="autoslide slide_cambio">
       <img class="horicenter slide_imagen"  src="http://cdn.urgente24.com/sites/default/files/notas/2013/11/29/5799_trabajadores-construccion.jpg" alt="Trabajo" >
     </div>
 
@@ -68,15 +71,15 @@
         <div  class="slideshow-body">
           <div class="slide slide_cambio">
           <img class="horicenter slide_imagen" src="http://www.sv.all.biz/img/sv/catalog/1806.jpeg" alt="productos1" >
-          <div class="">Producto 1</div>
+          <div class="horicenter">Producto 1</div>
           </div>
           <div class="slide slide_cambio">
           <img class="horicenter slide_imagen" src="http://www.maipumateriales.com/wp-content/uploads/2014/09/lad-mar-del-plata.jpg" alt="productos2" >
-          <div class="">Producto 2</div>
+          <div class="horicenter">Producto 2</div>
           </div>
           <div class="slide slide_cambio">
           <img class="horicenter slide_imagen" src="https://pipigonito.files.wordpress.com/2013/05/arcillas.jpg" alt="productos3" >
-          <div class="">Producto 3</div>
+          <div class="horicenter">Producto 3</div>
           </div>
         </div>
 
@@ -119,15 +122,45 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+//Slides automaticos
+
+var slideAutoIn = 0;
+showAutoSlides();
+
+function showAutoSlides() {
+    var j;
+    var slides = document.getElementsByClassName("autoslide");
+    for (j = 0; j < slides.length; j++) {
+        slides[j].style.display = "none";
+    }
+    slideAutoIn++;
+    if (slideAutoIn> slides.length) {slideAutoIn = 1}
+    slides[slideAutoIn-1].style.display = "block";
+    setTimeout(showAutoSlides, 5000); // Change image every 2 seconds
+}
+
+
   </script>
 
 
 
   <!-- Se presentara un slide con ofertas-->
   <div class="indexOfertas">
-      <h3> Ofertas </h3>
-      <div>
-        Slide de Ofertas en productos
+      <h2> Ofertas </h2>
+      <div class="">
+        <table class="tablestyle">
+          <tr class="redback">
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td><img src="http://www.cemexmexico.com/Content/productos/images/cemento-campana-sacos.jpg" alt="oferta1"></td>
+            <td><img src="http://www.arcelormittalca.com/store/images/D/vigas-ipn.jpg" alt="oferta2"></td>
+            <td><img src="https://www.trateco.net/fotos/grava_cara.jpg" alt="oferta3"></td>
+          </tr>
+        </table>
+
       </div>
   </div>
 
