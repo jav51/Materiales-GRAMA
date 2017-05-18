@@ -102,7 +102,6 @@ th, td{
 
 .slideshow-body{
   max-width: 1000px;
-  position: relative;
   margin: auto;
 }
 
@@ -115,6 +114,7 @@ th, td{
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+
 }
 
 @-webkit-keyframes fade {
@@ -131,12 +131,12 @@ th, td{
 .slide_imagen{
   width: 70%;
   height: 75%;
+
 }
 
 .numero_slide{
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
   top: 0;
 }
 
@@ -162,7 +162,78 @@ th, td{
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+/* Menu desplegable*/
+.no-js nav li:hover ul {
+  display:block;
+}
 
+/* base nav styles */
+nav {
+  display:block;
+  margin:0 auto 1%;
+  border:1px solid #222;
+  position:relative;
+  background-color:#3D3D3D;
+  font:16px Tahoma, Sans-serif;
+}
+nav ul {
+  padding:0;
+  margin:0;
+}
+nav li {
+  position:relative;
+  float:left;
+  list-style-type:none;
+}
+nav ul:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+nav li a {
+  display:block;
+  padding:10px 20px;
+  border-left:1px solid #999;
+  border-right:1px solid #222;
+  color:#eee;
+  text-decoration:none;
+}
+nav li a:focus {
+  outline:none;
+  text-decoration:underline;
+}
+nav li:first-child a {
+  border-left:none;
+}
+nav li.last a {
+  border-right:none;
+}
+nav a span {
+  display:block;
+  float:right;
+  margin-left:5px;
+}
+nav ul ul {
+  display:none;
+  width:100%;
+  position:absolute;
+  left:0;
+  background:#6a6a6a; }
+nav ul ul li {
+  float:none;
+}
+nav ul ul a {
+  padding:5px 10px;
+  border-left:none;
+  border-right:none;
+  font-size:14px;
+}
+nav ul ul a:hover {
+  background-color:#555;
+}
+/*fin de menu desplegable*/
 .dot {
   cursor:pointer;
   height: 13px;
@@ -260,6 +331,7 @@ th, td{
   min-height: 100px;
   margin-bottom: 20px;
   box-shadow: 0px 5px 10px -8px yellow;
+
 }
 .navmenu li {
     float: left;

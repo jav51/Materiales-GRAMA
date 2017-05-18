@@ -11,7 +11,7 @@
   <header class="flexdad navbar">
     <div class="dentro logo navbar_logo">
         <a class="navbar-brand" href="index.html" alt="logo"></a>
-    </div>
+   </div>
 
     <div class="topmenu">
     <ul class="navmenu listanavmenu">
@@ -32,19 +32,97 @@
     </li>
     </ul>
   </div>
-  <div class="sesionmenu">
-    <a href="#">
-      <span>Iniciar Sesion</span>
-    </a>
+  <div class="sesionmenu no-js">
+    <nav id="topNav">
+            <ul>
+            <li>
+                <a href="#" title="Nav Link 1">Opciones</a>
+                <ul>
+                    <li><a href="#" title="Sub Nav Link 1">Opcion 1</a></li>
+                    <li><a href="#" title="Sub Nav Link 2">Opcion 2</a></li>
+                    <li><a href="#" title="Sub Nav Link 3">Opcion 3</a></li>
+                    <li><a href="#" title="Sub Nav Link 4">Opcion 4</a></li>
+                    <li class="last"><a href="#" title="Sub Nav Link 5">Opcion 5</a></li>
+                </ul>
+            </li>
+            </ul>
+    </nav>
+    <script src="js/jquery.js"></script>
+    <script src="js/modernizr.js"></script>
   </div>
   </header>
 
 <!-- Aqui se presentaran algunas imagenes sobre los trabajos realizados por la empresa -->
-  <div class="slide_trabajos">
-      <h1> Nuestros Trabajos</h1>
-      <img  src="https://microjurisar.files.wordpress.com/2014/11/05.jpg" alt="Trabajo" >
-      <div id="cant"> cantidad de imagenes en el slide</div>
+<div class="horicenter">
+  <h1>Nuestros trabajos </h1>
+</div>
+  <div class="slideshow-body">
+    <div class="slide slide_cambio">
+      <div class="numero_slide">1 / 4</div>
+      <img class="horicenter slide_imagen"  src="https://microjurisar.files.wordpress.com/2014/11/05.jpg" alt="Trabajo" >
+      <div class="horicenter">Trabajito uno </div>
+    </div>
+
+    <div class="slide slide_cambio">
+      <div class="numero_slide">2 / 4</div>
+      <img class="horicenter slide_imagen"  src="http://www.letsprevent.com/wp-content/uploads/riesgos-trabajos-en-cubiert.jpg" alt="Trabajo" >
+      <div class="horicenter">Trabajito dos </div>
+    </div>
+
+    <div class="slide slide_cambio">
+      <div class="numero_slide">3 / 4</div>
+      <img class="horicenter slide_imagen"  src="http://www.londres38.cl/1937/articles-82605_recurso_1.jpg" alt="Trabajo" >
+      <div class="horicenter">Trabajito tres </div>
+    </div>
+
+    <div class="slide slide_cambio">
+      <div class="numero_slide">4 / 4</div>
+      <img class="horicenter slide_imagen"  src="http://cdn.urgente24.com/sites/default/files/notas/2013/11/29/5799_trabajadores-construccion.jpg" alt="Trabajo" >
+      <div class="horicenter">Trabajito cuatro</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="horicenter">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
   </div>
+
+  <script type="text/javascript">
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " active";
+
+}
+
+  </script>
 
   <!-- Se presentara un slide con algunos de los productos que la empresa ofrece-->
   <div class="conoceProductos">
