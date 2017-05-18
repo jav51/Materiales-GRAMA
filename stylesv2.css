@@ -102,11 +102,15 @@ th, td{
 
 .slideshow-body{
   max-width: 1000px;
-  position: relative;
+  position: block;
   margin: auto;
 }
 
 .slide{
+  display: none;
+}
+
+.autoslide{
   display: none;
 }
 
@@ -120,6 +124,7 @@ th, td{
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+
 }
 
 @keyframes fade {
@@ -129,8 +134,10 @@ th, td{
 
 
 .slide_imagen{
-  width: 70%;
-  height: 75%;
+  max-height: 400px;
+  min-height: 390px;
+  max-width: 500px;
+  min-width: 490px;
 }
 
 .numero_slide{
@@ -198,8 +205,6 @@ th, td{
 .indexOfertas{
   margin: auto;
   text-align: center;
-  padding-left: 25%;
-  padding-right: 25%;
   margin-bottom: 3%;
 }
 
@@ -699,12 +704,10 @@ border-radius: 7px;
 }
 
 .tablestyle{
-  position: absolute;
-  top: 20.5%;
-  left: 23%;
-  border-spacing: 25px;
   border-style: double;
   border-radius: 9px;
+  padding: 2%;
+  table-layout: fixed;
 }
 
 .id-modif-table{
@@ -1184,14 +1187,6 @@ td.nomina-textR, .nomina-textR td{
     background: #DCDCDC;
   }
 
-  .tablestyle{
-    position: absolute;
-    top: 20.5%;
-    left: 23%;
-    border-spacing: 7.5px;
-    border-style: double;
-    border-radius: 2.5px;
-  }
 
 
 
@@ -1519,13 +1514,5 @@ td.nomina-textR, .nomina-textR td{
     background: #DCDCDC;
   }
 
-  .tablestyle{
-    position: absolute;
-    top: 20.5%;
-    left: 23%;
-    border-spacing: 14.5px;
-    border-style: double;
-    border-radius: 5px;
-  }
 
 }

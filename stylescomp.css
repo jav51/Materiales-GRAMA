@@ -1,0 +1,26 @@
+
+.redback{
+  background-color: red;
+}
+
+.headSize{
+  height: 25%;
+}
+
+.imgOfer{
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 190px;
+  min-height: 190px;
+}
+
+a:visited{
+  color: blue;
+}
+
+#tabofer{
+  border-collapse: separate;
+  border-style: solid;
+  background-color: red;
+  padding: 3% 0% 0% 0%;
+}
