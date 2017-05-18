@@ -9,7 +9,7 @@
 </head>
 <!-- Barra estatica con opciones de navegacion (apareceria en todas las pags)-->
 <body>
-  <header class="flexdad navbar">
+  <header class="flexdad navbar" style="visibility:visible">
     <div class="dentro logo navbar_logo">
         <a class="navbar-brand" href="index.html" alt="logo"></a>
    </div>
@@ -33,9 +33,14 @@
     </li>
     </ul>
   </div>
-  <div class="sesionmenu">
-    <a href="Database_connect.php">
+  <div class="sesionmenu" id="Sin_inicio">
+    <a href="Inicio_sesion.html">
       <span>Iniciar Sesion</span>
+    </a>
+  </div>
+  <div class="sesionmenu" id="Iniciado">
+    <a href="" onclick="">
+      <span>Cerrar Sesion</span>
     </a>
   </div>
   </header>
@@ -156,9 +161,9 @@ function showAutoSlides() {
             <th class="headSize"></th>
           </tr>
           <tr>
-            <td><a href="Productos.html"><img class="imgOfer" src="http://www.cemexmexico.com/Content/productos/images/cemento-campana-sacos.jpg" alt="oferta1"></a></td>
-            <td><a href="Productos.html"><img class="imgOfer" src="http://www.arcelormittalca.com/store/images/D/vigas-ipn.jpg" alt="oferta2"></a></td>
-            <td><a href="Productos.html"><img class="imgOfer" src="https://www.trateco.net/fotos/grava_cara.jpg" alt="oferta3"></a></td>
+            <td><a href="Tabla-promociones.html"><img class="imgOfer" src="http://www.cemexmexico.com/Content/productos/images/cemento-campana-sacos.jpg" alt="oferta1"></a></td>
+            <td><a href="Tabla-promociones.html"><img class="imgOfer" src="http://www.arcelormittalca.com/store/images/D/vigas-ipn.jpg" alt="oferta2"></a></td>
+            <td><a href="Tabla-promociones.html"><img class="imgOfer" src="https://www.trateco.net/fotos/grava_cara.jpg" alt="oferta3"></a></td>
           </tr>
         </table>
 
