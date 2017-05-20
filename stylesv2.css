@@ -492,11 +492,6 @@ th, td{
   left: 28%
 }
 
-.centroContacto{
-  position: absolute;
-  top: 18%;
-  left: 22%;
-}
 
 .arial{
   font-family: arial;
@@ -511,9 +506,8 @@ th, td{
 
 
 .tableDelete{
-  position: absolute;
-  top: 30%;
-  left: 25%;
+  margin-top: 5%;
+  margin-left: 35%;
   border-spacing: 40px;
   border-style: solid;
   border-radius: 9px;
@@ -955,7 +949,7 @@ td.nomina-textR, .nomina-textR td{
 
 
   .navbar{
-    height: 20%;
+    height: 10%;
     background: #3D3D3D;
     position: fixed;
     top: 0px;
@@ -1039,7 +1033,6 @@ td.nomina-textR, .nomina-textR td{
   }
 
   .tableDelete{
-    position: absolute;
     top: 30%;
     left: 25%;
     border-spacing: 12px;
@@ -1283,7 +1276,7 @@ td.nomina-textR, .nomina-textR td{
 
 
   .navbar{
-    height: 20%;
+    height: 10%;
     background: #3D3D3D;
     position: fixed;
     top: 0px;
@@ -1367,7 +1360,6 @@ td.nomina-textR, .nomina-textR td{
   }
 
   .tableDelete{
-    position: absolute;
     top: 30%;
     left: 25%;
     border-spacing: 23.5px;

@@ -28,11 +28,4 @@ class Connection{
     }
 }
 
-try{
-$conexion = new Connection();
-$db = $conexion->getConnection();
-}catch(PDOException  $e ){
-echo 'Error: '.$e;
-}
-
 ?>
