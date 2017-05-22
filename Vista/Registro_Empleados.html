@@ -52,11 +52,19 @@
               </div>
             </td>
           </tr>
+          <tr>
+            <td>
+          <div class="TextoFormulario">
+          <label for="NumEmpleado">CURP</label>
+          <input id="NumEmpleado" type="text" name="NumEmpleado" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
+          </div>
+            </td>
+          </tr>
             <tr>
               <td>
             <div class="TextoFormulario">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" type="text" name="Nombre" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
+            <label for="nombres">Nombres</label>
+            <input id="nombres" type="text" name="nombres" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
             </div>
               </td>
             </tr>
@@ -64,15 +72,15 @@
               <td>
           <div class="TextoFormulario">
           <label for="apellidos">Apellido Paterno</label>
-          <input id="apellidopat" type="text" name="Apellidos" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
+          <input id="apellidopat" type="text" name="app" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
         </div>
             </td>
           </tr>
           <tr>
             <td>
         <div class="TextoFormulario">
-        <label for="apellidos">Apellido Materno</label>
-        <input id="apellidomat" type="text" name="Apellidos" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
+        <label for="apm">Apellido Materno</label>
+        <input id="apellidomat" type="text" name="apm" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
       </div>
           </td>
         </tr>
@@ -81,15 +89,15 @@
         <div class="TextoFormulario">
 
           <label for="rfc">RFC</label>
-          <input id="rfc" type="text" name="RFC" class="styleNameRegEmp" onkeyup="validarRFC(this)"/>
+          <input id="rfc" type="text" name="rfc" class="styleNameRegEmp" onkeyup="validarRFC(this)"/>
         </div>
           </td>
         </tr>
         <tr>
           <td>
         <div class="TextoFormulario">
-        <label for="direccion">Direccion</label>
-        <input id="direccion" type="text" name="Direccion" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
+        <label for="salarioBase">Salario Base</label>
+        <input id="salarioBase" type="number" name="salarioBase" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
       </div>
           </td>
         </tr>
@@ -98,24 +106,41 @@
 
           <div class="TextoFormulario">
 
-            <label for="mail">Correo</label>
-            <input id="mail" type="email" name="Correo"  class="styleNameRegEmp" onkeyup="validarmail(this)"/>
+            <label for="correoElectronico">Correo</label>
+            <input id="mail" type="email" name="correoElectronico"  class="styleNameRegEmp" onkeyup="validarmail(this)"/>
           </div>
           </td>
         </tr>
         <tr>
           <td>
           <div class="TextoFormulario">
-
-
             <label for="telefono">Telefono </label>
-            <select name="lada" id="lada" class="formlada" onchange="validarLada(this)">
-              <option value="Lada">Lada</option>
-              <option value="+1">+1</option>
-              <option value="+52">+52</option>
-            </select>
-            <input id="telefono"type="phone" name="Telefono" class="styleNameRegEmp" onkeyup="validarTelefono(this)"/>
+            <input id="telefono"type="phone" name="telefono" class="styleNameRegEmp" onkeyup="validarTelefono(this)"/>
           </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+        <div class="TextoFormulario">
+        <label for="puesto">Puesto</label>
+        <input id="puesto" type="text" name="puesto" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
+        </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+        <div class="TextoFormulario">
+        <label for="imss">IMSS</label>
+        <input id="imss" type="text" name="imss" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
+        </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+        <div class="TextoFormulario">
+        <label for="NumEmpleado">Num. Empleado</label>
+        <input id="NumEmpleado" type="text" name="NumEmpleado" class="styleNameRegEmp" onkeyup="validarVacio(this)"/>
+        </div>
           </td>
         </tr>
         <tr>
@@ -123,7 +148,7 @@
           <div class="TextoFormulario">
 
             <label for="pass">Contraseña</label>
-            <input id="pass" type="password" name="Contraseña" pattern="" class="styleNameRegEmp" onkeyup="validarPass(this)"/>
+            <input id="pass" type="password" name="password" pattern="" class="styleNameRegEmp" onkeyup="validarPass(this)"/>
           </div>
           </td>
         </tr>
@@ -291,7 +316,7 @@
                 return 0;
               }
               else{
-                if(registro[i]!= lada){
+                if(registro[i]!= lada){ 
                 registro[i].className="styleNameAceptadoRegEmp";
                 error.className="onsubmit";}
                 else {

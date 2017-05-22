@@ -103,7 +103,7 @@ class ProdcutosCtrl
   {
     if(empty($_POST)){
 
-          require_once("Vista/Eliminar_Productos.html");
+          require_once("Vista/Producto_Individual.html");
         }
         else{
 
