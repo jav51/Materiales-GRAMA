@@ -7,9 +7,11 @@ class Connection{
     public function Connection(){
 
     $conn = NULL;
-    $dsn = 'mysql:dbname=alexissg_grama;host=localhost';
-    $username = 'materialesgrama';
-    $password = 'Materiales-grama';
+        require_once ('config.php');
+
+        $dsn = DSN;
+        $username = DB_NAME;
+        $password = DB_PASS;
 
         try{
 
