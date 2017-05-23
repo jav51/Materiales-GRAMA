@@ -1,13 +1,13 @@
 <?php
 
-include('Modelos/NominaMdl.php');
+include('Modelos/CarritoMdl.php');
 
 
-class NominaCtrl
+class CarritoCtrl
 {
   function __construct()
   {
-    $this->model = new NominaMdl();
+    $this->model = new CarritoMdl();
   }
 
   function ejecutar()
@@ -19,14 +19,11 @@ class NominaCtrl
       case 'insertar':
         $this->insertar();
         break;
-      case 'modificar':
-        $this->modificar();
-        break;
       case 'borrar':
         $this->borrar();
         break;
-      case 'listar_':
-        $this->listar_();
+      case 'borrarT':
+        $this->borrarT();
         break;
       default:
         echo 'Accion no reconocida';
@@ -37,22 +34,22 @@ class NominaCtrl
   function listar()
   {
       if(isset($_GET['r']) && $_GET['r']== 'json'){
-         return json_encode($nominas);
+         return json_encode($carrito);
       }
-      $nominas = $this->model->obtenerNomina();
+      $carrito = $this->model->obtenerNomina();
 
-      return $this->procesarVistaListar($nominas);
+      return $this->procesarVistaListar($carrito);
   }
 
-  function procesarVistaListar($nominas)
+  function procesarVistaListar($carrito)
   {
     if(empty($_POST)){
 
-					require_once("Vista/AltaAlumno.html");
+					require_once("Vista/carrito.html");
 				}
 				else{
 
-						$vista = file_get_contents("Vista/Consulta_Nomina.html");
+						$vista = file_get_contents("Vista/Carrito.html");
 						$header = file_get_contents("Vista/cabecera.html");
 						$footer = file_get_contents("Vista/pie.html");
 
@@ -60,8 +57,8 @@ class NominaCtrl
 						$final_fila = strrpos($vista,'</tr>') + 5;
 						$fila = substr($vista,$inicio_fila,$final_fila-$inicio_fila);
 
-						foreach ($nominas as $row_) {
-              $empleado = $this->model->detalleEmpleado($row['curpEmpleado']);
+						foreach ($carrito as $row_) {
+              $detCarrito = $this->model->detalleCarrito($row['curpEmpleado']);
                 foreach ($empleado as $row)
                 {
                   $new_fila = $fila;

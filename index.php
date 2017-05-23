@@ -14,7 +14,7 @@
     case 'productos':
         require_once 'Controladores/ProdcutosCtrl.php';
 
-        $prod_ctrl = new ProdcutosCtrl();
+        $prod_ctrl = new ProductosCtrl();
         $prod_ctrl->ejecutar();
 
       break;
