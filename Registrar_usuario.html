@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesv2.css" />
+
+    <title>Registrando usuario</title>
+
+  </head>
+  <body>
+    <header class="flexdad navbar">
+      <div class="dentro logo navbar_logo">
+          <a class="navbar-brand" href="index.php" alt="logo"></a>
+      </div>
+
+      <div class="topmenu">
+      <ul class="navmenu listanavmenu">
+        <li >
+          <a href="AcercaDe.html">
+            <span>Acerca de Nosotros</span>
+          </a>
+        </li>
+        <li >
+          <a href="Productos.html">
+            <span>Productos</span>
+          </a>
+      </li>
+        <li >
+          <a href="Servicios.html">
+            <span>Servicios</span>
+          </a>
+      </li>
+      </ul>
+    </div>
+          <div class="sesionmenu">
+            <a href="#">
+              <span>Iniciar Sesion</span>
+            </a>
+          </div>
+          </header>
+
+
+      <div class="tableText"><h3>Bienvenido al registro de usuarios nuevos mediante el
+      cual podras mantenerte informado de nuestras promociones. </h3></div>
+
+      <form action="Registrar_usuario.html" method="post" name="Registro_usuario">
+      <table class="formularyTable horicenter">
+        <caption class="bolded-capt">REGISTRARSE</caption>
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="onsubmit" id="error">
+                  <p>* Por favor, complete correctamente los recuadros en rojo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="TextoFormulario">
+              <label for="nombre">Nombres:</label>
+              <input  class="styleName  " type="text" id="nombre" name="nombre" onkeyup="validarVacio(this)"/>
+              <label for="apellidopat">Apellido paterno:</label>
+              <input class="styleName" type="text" id="apellidopat" name="apellido paterno" onkeyup="validarVacio(this)"/>
+              <label for="apellidomat">Apellido materno:</label>
+              <input class=" styleName" type="text" id="apellidomat" name="apellido materno" onkeyup="validarVacio(this)"/>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="TextoFormulario">
+                <label for="mail">Correo electronico:</label>
+                <input class=" styleName" type="email" id="mail" name="correo" onkeyup="validarmail(this)"/>
+          </div>
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="TextoFormulario">
+              <label for="pass">Contraseña: </label>
+              <input class=" styleName" type="password" id="pass" name="contraseña" onkeyup="validarPass(this)"/>
+              <label for="pass">Confirmar contraseña:</label>
+              <input class=" styleName" type="password" id="cpass" name="confrimar contraseña" onkeyup="confirmarPass(this)"/>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <div class="TextoFormulario">
+            <button type="reset" name="resetear" value="Reiniciar formato" id="reset">Reiniciar</button>
+            <button type="button" name="registrar" value="Registrar" id="reg" onclick="Registrar()">Registrar</button>
+            </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+      </form>
+
+    <footer class="flexdad linkbar"> Links importantes
+  <div class="bottom-menu">
+      <ul class="link-menu">
+        <li><a href="#">
+          <span>Link a politica y privacidad</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a terminos y condiciones</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a bolsa de trabajo</span>
+        </a> </li>
+      </ul>
+  </div>
+    </footer>
+
+    <script type="text/javascript">
+    console.log("javascript");
+
+    var error = document.getElementById('error');
+
+      function  validarVacio(input)
+      {
+        if(input.value.length == 0)
+        {
+          input.className="styleNameError";
+        }
+        else{
+          input.className="styleNameAceptado";
+        }
+      }
+
+      function  validarPass(input)
+      {
+        if(input.value.length <= 8)
+        {
+          input.className="styleNameError";
+        }
+        else{
+          input.className="styleNameAceptado";
+        }
+      }
+      function  confirmarPass(input)
+      {
+        if(input.value != document.getElementById('pass').value)
+        {
+          input.className="styleNameError";
+        }
+        else{
+          input.className="styleNameAceptado";
+        }
+      }
+
+      function validarmail(input)
+      {
+        var mailpattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if(!mailpattern.test(input.value))
+        {
+          input.className="styleNameError";
+        }
+        else{
+          input.className="styleNameAceptado";
+        }
+      }
+
+
+      function Registrar(){
+
+        var nombre = document.Registro_usuario.nombre;
+        var apellidopat = document.Registro_usuario.apellidopat;
+        var apellidomat = document.Registro_usuario.apellidomat;
+        var correo = document.Registro_usuario.mail;
+        var pass = document.Registro_usuario.pass;
+        var cpass = document.Registro_usuario.cpass;
+
+        var campos=[nombre,apellidopat,apellidomat,correo,pass,cpass];
+
+        for(var i=0;i<campos.length;i++){
+          if(campos[i].className!="styleNameAceptado"){
+
+            error.className ="onsubmitDenied";
+            campos[i].focus();
+            campos[i].className = "styleNameError";
+            return 0;
+          }
+          else{
+            campos[i].className="styleNameAceptado";
+            error.className="onsubmit";
+          }
+        }
+        document.Registro_usuario.submit();
+
+      }
+
+    </script>
+
+  </body>
+</html>

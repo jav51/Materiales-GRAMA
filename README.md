@@ -1,35 +1,67 @@
-#**Desarrolladores.**
-- Santana Gonzales Alexis.
-- Lira Telles Andres.
-- Hern√°ndez Grajales Jes√∫s Javier.
+# Desarrolladores
+- [Santana Gonzales Alexis](https://github.com/AlexisSG)	:baby:
+- [Lira Telles Andres](https://github.com/ALT31)	:smiley_cat:
 
-##Descripci√≥n del proyecto.
-El objetivo de este proyecto es crear una pagina web para una constructora la cual se encarga de hacer diferentes tipos de obras adem√°s ofrece diversos materiales para la construcci√≥n.
-Nuestro objetivo es crear una pagina web la cual contenga una descripci√≥n de los diferentes servicios que ofrece la empresa, adem√°s mostrar√° los diferentes tipos de materiales ofrecidos. Tambi√©n contar√° con un servicio de nominas en linea.
+# Materiales GRAMA
 
-###Usuarios no registrados
-Solo podr√°n hacer consultas de los diferentes servicios, materiales y ofertas ofrecidos por la empresa en la pagina web.
+###### En el siguiente documento se identifica a los "Desarrolladores" como los agregados al inicio de dicho documento, a Materiales GRAMA como el "cliente" y a los consumidores como "consumidores/usuarios"
 
-###Usuarios
-Los usuarios registrados podran hacer consultas de los diferentes servicios, materiales y ofertas ofrecidos por la empresa en la pagina web, adem√°s podr√°n relizar cotizaciones y agregar productos a su propia lista de deseados.
+## DescripciÛn del proyecto
+El proyecto es una pagina web ordenada por la compaÒia de materiales para la construcciÛn GRAMA.
+Dicha pagina fue diseÒada en base a las necesidades del cliente, de la especificacion de requerimientos y a partir de su antigua pagina _(expirada)_ y de un modelo base de **CEMEX** y una tienda en linea.
+El objetivo principal de la pagina es dar a conocer la empresa y que esta cuenta con un sitio informativo para sus clientes.
+El sistema de tienda solo se utilizara para recibir una cotizaciÛn de los productos via **e-mail** ya que segun el cliente la pagina no manejara los precios en vivo.
+Ademas de que se contara con una lista de promociones y los productos en promociÛn para informar al usuario que estos se encuentran con un precio especial, asi el usuario se interesara de pedir una cotizaciÛn por los mismos.
 
-###Administradores
-Los administradores agregaran, modificar√°n o eliminar√°n productos, y,  podr√°n crear y consultar las nominas de los diferentes empleados.
+## InformaciÛn importante de la entrevista
+Despues de una entrevista con el cliente, fue extraido que su mayor necesidad era tener presencia en el internet y un sistema de cotizaciÛn para los clientes.
+En palabras del cliente:
+> Materiales GRAMA es una empresa confiable, pero poco conocida, necesitamos interesar al p˙blico mediante un sistema accesible
+Despues de preguntar como funcionaria el sistema de tienda sin precio el cliente agrego:
+> No podemos proveer un precio sin saber la combinaciÛn de servicios y productos requerida por nuestros clientes, por lo tanto uno de nuestros especialistas debe analizar las necesidades del cliente 
 
-###Sistema de nominas
-El sistema contar√° con un sistema de nominas online. Funcionar√° de la siguiente mannera, el sistema tendr√° una plantilla pre-hecha de un recibo de nomina el cual incluye su sueldo, d√≠as laborados, bonos, sueldo rebajado por prestamos, sueldo rebajado por cuota del IMS etc.
-Un adminsitrador llenar√° el formulario con los datos correspondientes y el sistema generar√° el recibo de nomina en formato PDF.
+En base a tales declaraciones se extrajo lo siguiente:
+- El cliente desea que sus consumidores le contacten mediante **e-mail**
+- El cliente requiere presencia en internet mediante su propio contenido
+- El cliente necesita una base de datos para proporcionar un servicio m·s eficiente a sus consumidores
 
-###Pagina Web
-La pagina web contar√° con lo siguiente:
--Pagina principal.
--Un catalogo en linea de los productos ofrecidos por la empresa.
--Secci√≥n de promociones en la cual se mostraran los productos en promoci√≥n.
--Secci√≥n de servicios la cual incluir√° los diferentes servicios que ofrece la empresa.
--Secci√≥n de bolsa de trabajo en la cual los usuarios podr√°n saber si la empresa est√° contratado personal.
--Secci√≥n de whislist para agregar los produtos que le interesaron al cliente y as√≠ posteriormente si dicho producto llega a estar en oferta se le notificar√° via correo electronico.
--Secci√≥n ce carrito en el cual el cliente podr√° agregar los articulos que desea cotizar, ya que la pagina no inclur√° el precio de los productos exceptuando la secci√≥n de ofertas.
--Secci√≥n de contactos en la cual se mostraran los numeros telefonicos y la ubicaci√≥n de la empresa.
+## Usuarios
+Acontinuacion se listan los **usuarios** y las acciones que podran llevar acabo en el sistema:
+1. Usuario sin registrar
+	- Navegar en la pagina
+	- Navegar por productos
+	- Navegar las promociones
+	- Crear un usuario registrado
+2. Usuario registrado
+	- Navegar en la pagina
+	- Navegar por productos
+	- Navegar las promociones
+	- Iniciar sesiÛn
+	- Agregar productos, servicios y promociones al carrito
+	- Eliminar productos, servicios y promociones al carrito
+	- Solicitar cotizaciÛn
+	- Modificar su informaciÛn de usuario
+3. Administrador
+	- Navegar en la pagina
+	- Navegar por productos
+	- Navegar las promociones
+	- Iniciar sesiÛn
+	- Agregar productos, servicios y promociones a la oferta
+	- Eliminar productos, servicios y promociones a la oferta
 
-###Demo
-www.materiales-grama.com
+
+## Pagina Web
+La pagina web contar· con lo siguiente:
+- Pagina principal
+- Barra de navegaciÛn
+- Un catalogo en linea de los productos ofrecidos por la empresa
+- Un catalogo en linea de los servicios ofrecidos por la empresa
+- Un catalogo en linea de las promociones ofrecidos por la empresa
+- SecciÛn de bolsa de trabajo en la cual los usuarios podr·n saber si la empresa est· contratado personal
+- SecciÛn ce carrito en el cual el cliente podr· agregar los articulos que desea cotizar
+- SecciÛn de contactos en la cual se mostraran los numeros telefonicos y la ubicaciÛn de la empresa
+- Pagina de inicio de sesiÛn (que har· distinciÛn entre usuarios)
+- Base de datos con usuarios, productos, contraseÒas y carrito
+
+### Demo
+El demo puede encontrarse en [Materiales GRAMA](http://www.materiales-grama.com/)

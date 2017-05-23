@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesv2.css" />
+
+    <title>Iniciar sesion GRAMA</title>
+
+  </head>
+  <body>
+    <header class="flexdad navbar">
+        <div class="dentro logo navbar_logo">
+            <a class="navbar-brand" href="index.php" alt="logo"></a>
+            
+        </div>
+        <div class="topmenu">
+        <ul class="navmenu listanavmenu">
+          <li >
+            <a href="AcercaDe.html">
+              <span>Acerca de Nosotros</span>
+            </a>
+          </li>
+          <li >
+            <a href="Productos.html">
+              <span>Productos</span>
+            </a>
+        </li>
+          <li >
+            <a href="Servicios.html">
+              <span>Servicios</span>
+            </a>
+        </li>
+        </ul>
+      </div>
+
+      </header>
+
+
+
+      <form action="login.php?login" method="post" id="Inicio_sesion">
+      <table class="formularyTable horicenter">
+        <caption class="bolded-capt">Inicio de sesión</caption>
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="onsubmit" id="error">
+                  <p>* Por favor, revice que los datos sean correctos</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="TextoFormulario">
+                <label for="mail">Correo electronico:</label>
+                <input class=" styleName" type="email" id="inimail" name="usuario" />
+          </div>
+          </td>
+          </tr>
+          <tr>
+            <td>
+
+              <div class="TextoFormulario">
+              <label for="pass">Contraseña: </label>
+              <input class=" styleName" type="password" id="inipass" name="pass"/>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="TextoFormulario horicenter">
+                <p>¿No tienes cuenta?
+                  <a href="Registrar_usuario.html">Registrate aquí</a>
+                </p>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <div class="TextoFormulario">
+            <button type="button" name="iniciar" value="Iniciar" id="ini" onclick="validar()">Iniciar sesión</button>
+            </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+      </form>
+
+    <footer class="flexdad linkbar"> Links importantes
+  <div class="bottom-menu">
+      <ul class="link-menu">
+        <li><a href="#">
+          <span>Link a politica y privacidad</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a terminos y condiciones</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a bolsa de trabajo</span>
+        </a> </li>
+      </ul>
+  </div>
+    </footer>
+
+    <script type="text/javascript">
+    console.log("javascript");
+
+    var error = document.getElementById('error');
+    var x =0;
+      function  validarVacio(input)
+      {
+        if(input.value.length == 0)
+        {
+          input.className="styleNameError";
+          error.className ="onsubmitDenied";
+        }
+        else{
+          input.className="styleNameAceptado";
+          error.className ="onsubmit";
+          x++;
+        }
+      }
+
+      function validar()
+      {
+        validarVacio(inimail)
+
+        validarVacio(inipass)
+        if(x>=2)
+        {
+          document.getElementById("Inicio_sesion").submit();
+        }
+      }
+
+    </script>
+
+  </body>
+</html>

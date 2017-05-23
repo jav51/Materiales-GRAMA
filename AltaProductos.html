@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesv2.css" />
+  </head>
+  <header class="flexdad navbar">
+    <div class="dentro logo navbar_logo">
+        <a class="navbar-brand" href="index.php" alt="logo"></a>
+    </div>
+    <div class="topmenu">
+    <ul class="navmenu listanavmenu">
+      <li >
+        <a href="AcercaDe.html">
+          <span>Acerca de Nosotros</span>
+        </a>
+      </li>
+      <li >
+        <a href="Productos.html">
+          <span>Productos</span>
+        </a>
+    </li>
+      <li >
+        <a href="Servicios.html">
+          <span>Servicios</span>
+        </a>
+    </li>
+    </ul>
+  </div>
+  <div >
+    <a href="" onclick="" class="sesionmenu" id="Iniciado">
+      <span>Cerrar Sesion</span>
+    </a>
+    <a href="Inicio_sesion.html" class="sesionmenu" id="Sin_inicio">
+      <span>Iniciar Sesion</span>
+    </a>
+
+  </div>
+
+  </header>
+
+    <div class="tableText"><p class="tableText">Para registrar un nuevo producto llena todos los campos con la información requerida.</p>
+    <p class="tableText">Recuerda que es importante NO registrar dos veces el mismo producto o se duplicará en la pagina de internet.</p></div>
+
+    <form action="AltaProductos.php" method="post">
+    <table class="formularyTable">
+      <caption class="h2">REGISTRO DE PRODUCTOS</caption>
+      <thead></thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="TextoFormulario">
+            <label for="nombre">Nombre del Producto</label>
+            <input  class="styleName" type="text" id="nombre" name="nombre" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="TextoFormulario">
+              <label for="categoria">Categoria</label>
+              <select id="categoria" name="categoria">
+              <option value="/0">Selecciona una Opción</option>
+              <option value="Arenas">Arenas</option>
+              <option value="Agregados">Agregados</option>
+              <option value="Prefabricados">Prefabricados</option>
+              <option value="Ladrillos">Ladrillos</option>
+          </select>
+        </div>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="TextoFormulario">
+            <label for="Descripcion">Descripción del Producto</label>
+            <textarea class="styleTextArea" rows="10" cols="33" name="descripcion" id="Descripcion" placeholder="Escribe una descripcion del producto"></textarea>
+          </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="TextoFormulario">
+            <label for="">Seleccionar Imagen</label>
+            <input name="ruta_imagen" type="file" accept="image/*"/>
+          </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <div class="TextoFormulario">
+          <input type="submit" value="Subir Producto" />
+          </div>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+    </form>
+
+    <footer class="flexdad linkbar ">
+      <div class="bottom-menu">
+
+      <ul class="link-menu">
+        <li><a href="#">
+          <span>Link a politica y privacidad</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a terminos y condiciones</span>
+        </a></li>
+        <li> <a href="Bolsa de trabajo.html">
+          <span>Link a bolsa de trabajo</span>
+        </a> </li>
+
+
+      </ul>
+    </div>
+
+    </footer>
+  </body>
+</html>

@@ -12,7 +12,7 @@
   <body>
     <header class="flexdad navbar">
         <div class="dentro logo navbar_logo">
-            <a class="navbar-brand" href="index.html" alt="logo"></a>
+            <a class="navbar-brand" href="index.php" alt="logo"></a>
         </div>
         <div class="topmenu">
         <ul class="navmenu listanavmenu">
@@ -38,7 +38,6 @@
 <?php
 session_start();
 require_once("Database_connect.php");
-include("cabecera.php");
 
 $conn = new Connection();
 
@@ -56,28 +55,38 @@ if(!empty($_POST['usuario']) && !empty($_POST['pass'])) {
  $username=$_POST['usuario'];
  $password=$_POST['pass'];
 
-$query = $db->prepare("SELECT * FROM usuarios WHERE correo_electronico='".$usuario."' AND password='".$pass."'");
+$st = $db->prepare("SELECT * FROM usuarios WHERE correo_electronico='".$username."' AND password='".$password."'");
 
-$st = $query->execute();
+$st->execute();
 
 $numrows=$st->rowCount();
+
  if($numrows!=0)
 {
  while($row=$st->fetch(PDO::FETCH_ASSOC))
  {
- $dbusername=$row['usuario'];
- $dbpassword=$row['pass'];
+ $dbusername=$row['correo_electronico'];
+ $dbpassword=$row['password'];
+ $dbadmin=$row['codigo_admin'];
  }
-
-if($username == $dbusername && $password == $dbpassword)
-
+require_once 'config.php';
+$admin = ADMIN;
+if($username == $dbusername && $password == $dbpassword && $admin == $dbadmin)
 {
 
  $_SESSION['session_username']=$username;
-
+ $_SESSION['session_id']=$admin;
 /* Redirect browser */
- header("Location: index.html");
- }
+ header("Location: index.php");
+ }else
+ if($username == $dbusername && $password == $dbpassword)
+ {
+
+  $_SESSION['session_username']=$username;
+
+ /* Redirect browser */
+  header("Location: index.php");
+  }
  }
  else{
 

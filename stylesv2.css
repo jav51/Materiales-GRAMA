@@ -36,7 +36,17 @@ th, td{
    border-color: black;
    font-size: 120%
 }*/
-
+.imgServiesBg{
+  max-width: 15%;
+  min-width: 15%;
+}
+.imgServiesSm{
+  max-width: 15%;
+  min-width: 15%;
+}
+.tebleServices{
+  width: 75%;
+}
 .wishlist-table{
   border-spacing: 9px;
   border-collapse: separate;
@@ -242,13 +252,28 @@ th, td{
 .dentro{
   position: relative;
 }
+.carrito_logo{
+  float: left;
+  height: 65%;
+  width: 5%;
+}
+
+.carrito_brand {
+    float: left;
+    font-size: 5px;
+    line-height: 6px;
+    background: url(img/cart-icon.png);
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+}
 
 
 .navbar-brand {
     float: left;
     font-size: 18px;
     line-height: 20px;
-    background: url(../img/logo.png) no-repeat ;
+    background: url(img/logo.png) no-repeat ;
     background-size: auto;
     width: 129px;
     height: 100px;
@@ -354,6 +379,10 @@ th, td{
   height: 35px;
   background: #DCDCDC;
   margin-top: 2%;
+}
+
+.promos {
+  width: 100%;
 }
 
 .bottom-menu{
@@ -862,7 +891,7 @@ td.nomina-textR, .nomina-textR td{
   visibility: visible;
 }
 #Iniciado{
-  visibility: hidden;
+  visibility: visible;
 }
 
 /* Compatibilidad con resolucion usual de un smartphone base de transformacion:3.33*/
@@ -941,11 +970,13 @@ td.nomina-textR, .nomina-textR td{
       float: left;
       font-size: 5px;
       line-height: 6px;
-      background: url(../img/logo.png) ;
+      background: url(img/logo.png) ;
       background-size: cover;
       width: 38.5px;
       height: 30px;
   }
+
+
 
 
   .navbar{
@@ -1268,7 +1299,7 @@ td.nomina-textR, .nomina-textR td{
       float: left;
       font-size: 10.5px;
       line-height: 11.5px;
-      background: url(../img/logo.png) ;
+      background: url(img/logo.png) ;
       background-size: cover;
       width: 75.5px;
       height: 58.5px;

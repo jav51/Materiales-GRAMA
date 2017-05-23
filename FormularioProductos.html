@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="stylesv2.css" />
   </head>
   <body>
     <header class="flexdad navbar">
       <div class="dentro logo navbar_logo">
-          <a class="navbar-brand" href="index.html" alt="logo"></a>
+          <a class="navbar-brand" href="index.php" alt="logo"></a>
       </div>
       <div class="topmenu">
       <ul class="navmenu listanavmenu">
@@ -72,7 +72,7 @@
           <td>
             <div class="TextoFormulario">
             <label for="">Seleccionar Imagen</label>
-            <input name="uploadedfile" type="file" />
+            <input name="uploadfile" type="file" accept="image/*"/>
           </div>
           </td>
         </tr>
@@ -86,12 +86,24 @@
       </tbody>
     </table>
     </form>
-    <div class="linkbarFormulary"> Links importantes
-      <ul>
-        <il> Link a politica de privacidad </il>
-        <il> Link a terminos y condiciones </il>
-        <il> Link a bolsa de trabajo </il>
+    <footer class="flexdad linkbar ">
+      <div class="bottom-menu">
+
+      <ul class="link-menu">
+        <li><a href="#">
+          <span>Link a politica y privacidad</span>
+        </a></li>
+        <li> <a href="#">
+          <span>Link a terminos y condiciones</span>
+        </a></li>
+        <li> <a href="Bolsa de trabajo.html" target="_blank">
+          <span>Link a bolsa de trabajo</span>
+        </a> </li>
+
+
       </ul>
     </div>
+
+    </footer>
   </body>
 </html>

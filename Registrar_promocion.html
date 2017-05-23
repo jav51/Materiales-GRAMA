@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesv2.css" />
+
+    <title>Registrar promocion</title>
+
+  </head>
+  <body>
+    <header class="flexdad navbar">
+      <div class="dentro logo navbar_logo">
+          <a class="navbar-brand" href="index.php" alt="logo"></a>
+      </div>
+
+      <div class="topmenu">
+      <ul class="navmenu listanavmenu">
+        <li >
+          <a href="AcercaDe.html">
+            <span>Acerca de Nosotros</span>
+          </a>
+        </li>
+        <li >
+          <a href="Productos.html">
+            <span>Productos</span>
+          </a>
+      </li>
+        <li >
+          <a href="Servicios.html">
+            <span>Servicios</span>
+          </a>
+      </li>
+      </ul>
+    </div>
+          </header>
+      <div class="tableText"><h3>Registra una promocion en este formato.</h3></div>
+
+         <form action="inicio.php?ctrl=promociones&act=insertar" id="registropromocion" method="post">
+         <table class="formularyTable horicenter">
+           <caption class="caption-style">REGISTRAR UNA PROMOCIÓN</caption>
+           <thead></thead>
+           <tbody>
+             <tr>
+               <td>
+                 <div class="onsubmit" id="error">
+                     <p>* Por favor, revice que los recuadros en rojo no esten vacios</p>
+                 </div>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <div class="TextoFormulario">
+                 <label for="nombre">ID del Producto</label>
+                 <input  class="styleName" type="number" id="promo" name="id" />
+                 </div>
+               </td>
+             </tr>
+
+             <tr>
+               <td>
+                 <div class="TextoFormulario">
+                 <label for="nombre">Precio Especial</label>
+                 <input  class="styleName" type="number" id="precioEsp" name="precioEsp" />
+                 </div>
+               </td>
+             </tr>
+
+             <tr>
+               <td>
+                 <div class="TextoFormulario">
+                 <label for="nombre">Porcentaje de Descuento</label>
+                 <input  class="styleName" type="number" id="desc" name="desc" />
+                 </div>
+               </td>
+             </tr>
+             <tr>
+               <td>
+               <div class="TextoFormulario">
+               <button type="button" value="Registrar promocion" name="registrar" id="regprom" onclick="validarVacio(promo),validarVacio(precioEsp),validarVacio(desc), Registrar()">Registrar</button>
+               </div>
+             </td>
+             </tr>
+           </tbody>
+         </table>
+         </form>
+
+      <footer class="flexdad linkbar"> Links importantes
+    <div class="bottom-menu">
+        <ul class="link-menu">
+          <li><a href="#">
+            <span>Link a politica y privacidad</span>
+          </a></li>
+          <li> <a href="#">
+            <span>Link a terminos y condiciones</span>
+          </a></li>
+          <li> <a href="#">
+            <span>Link a bolsa de trabajo</span>
+          </a> </li>
+        </ul>
+    </div>
+      </footer>
+      <script type="text/javascript">
+      console.log("javascript");
+
+      var error = document.getElementById('error');
+
+        function  validarVacio(input)
+        {
+          if(input.value.length == 0)
+          {
+            if(input.className!="styleTextArea"&&input.className!="styleTextAreaError"){
+            input.className="styleNameErrorRegEmp";
+            error.className ="onsubmitDenied";}
+            else {
+              input.className="styleTextAreaError";
+              error.className ="onsubmitDenied";
+            }
+          }
+          else{
+            if(input.className!="styleTextArea"&&input.className!="styleTextAreaError"){
+            input.className="styleNameAceptadoRegEmp";
+            error.className ="onsubmit";
+          }
+            else {
+              input.className="styleTextAreaAceptado";
+              error.className ="onsubmit";
+            }
+          }
+        }
+
+        function Registrar(){
+
+          var id = document.getElementById("promo");
+          var precioEsp = document.getElementById("precioEsp");
+          var desc = document.getElementById("desc");
+
+
+
+          var registro=[id,precioEsp,desc];
+
+          for(var i=0;i<registro.length;i++){
+            if(registro[i].className!="styleNameAceptadoRegEmp"){
+
+              error.className ="onsubmitDenied";
+              registro[i].focus();
+              registro[i].className = "styleNameErrorRegEmp";
+              return 0;
+            }
+            else{
+              registro[i].className="styleNameAceptadoRegEmp";
+              error.className="onsubmit";
+                registro[i].className="formladaAceptado";
+                error.className="onsubmit";
+            }
+          }
+          document.getElementById("registropromocion").submit();
+
+        }
+
+      </script>
+
+  </body>
+</html>
