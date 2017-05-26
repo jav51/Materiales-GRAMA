@@ -3,11 +3,12 @@
 include('Modelos/ProductoMdl.php');
 
 
-class ProdcutosCtrl
+class ProductoCtrl
 {
-  function __construct()
+  function __construct($db)
   {
-    $this->model = new ProductoMdl();
+  $conn = $db;
+    $this->model = new ProductoMdl($conn);
   }
 
   function ejecutar()
@@ -27,6 +28,9 @@ class ProdcutosCtrl
         break;
       case 'listar_':
         $this->listar_();
+        break;
+        case 'listarids':
+        $this->listarids();
         break;
       default:
         echo 'Accion no reconocida';
@@ -116,11 +120,22 @@ class ProdcutosCtrl
       }
       return $this->procesarVista($productos);
   }
+  
+  function listarids()
+  {
+        
+      $ids = $this->model->obtenerids();
+      
+      if(isset($_GET['r']) && $_GET['r']=='json'){
+      header('Content-type: application/json');
+         var_dump(json_encode($ids));
+         return json_encode($ids);
+      }
+      
+      var_dump($ids);
+      return $ids;
+  }
 
 }
-
-
-
-
 
  ?>

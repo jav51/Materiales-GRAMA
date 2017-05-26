@@ -46,7 +46,7 @@ $db = $conn->getConnection();
 
 if(isset($_SESSION["session_username"])){
 
-header("Location: index.html");
+header("Location: index.php");
 }
 
 if(isset($_GET["login"])){
@@ -87,33 +87,16 @@ if($username == $dbusername && $password == $dbpassword && $admin == $dbadmin)
  /* Redirect browser */
   header("Location: index.php");
   }
- }
- else{
+ 
+  else {?>
 
-   $query = $db->prepare("SELECT * FROM empleados WHERE correoElectronico='".$usuario."' AND password='".$pass."'");
-
-   $st = $query->execute();
-
-   $numrows=$st->rowCount();
-    if($numrows!=0)
-   {
-    while($row=$st->fetch(PDO::FETCH_ASSOC))
-    {
-    $dbusername=$row['usuario'];
-    $dbpassword=$row['pass'];
-    }
-
-   if($username == $dbusername && $password == $dbpassword)
-   {
-
-    $_SESSION['session_username']=$username;
-
-    header("Location: index.html");
-    }
- }
- else {
-
-$message = "Nombre de usuario ó contraseña invalida!";
+<div class="formularyTable horicenter">
+ <span>Usuario o contraseña incorrectos</span>
+</div>
+<button type="button"><a href="Inicio_sesion.html">Regresar</a></button>
+</body>
+</html>
+<?php
  }
 
 }} else {
@@ -121,30 +104,4 @@ $message = "Nombre de usuario ó contraseña invalida!";
 }
 }
 
-?>
-
- <div class="container mlogin">
- <div id="login">
- <h1>Logueo</h1>
-<form name="loginform" id="loginform" action="" method="POST">
- <p>
- <label for="user_login">Nombre De Usuario<br />
- <input type="text" name="username" id="username" class="input" value="" size="20" /></label>
- </p>
- <p>
- <label for="user_pass">Contraseña<br />
- <input type="password" name="password" id="password" class="input" value="" size="20" /></label>
- </p>
- <p class="submit">
- <input type="submit" name="login" class="button" value="Entrar" />
- </p>
- <p class="regtext">No estas registrado? <a href="register.php" >Registrate Aquí</a>!</p>
-</form>
-
-</div>
-
-</div>
-
- <?php include("includes/footer.php"); ?>
-
- <?php if (!empty($message)) {echo "<p class=\"error\">" . "MESSAGE: ". $message . "</p>";} ?>
+if (!empty($message)) {echo "<p class=\"error\">" . "MESSAGE: ". $message . "</p>";} ?>

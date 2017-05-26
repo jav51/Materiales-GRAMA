@@ -4,11 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="stylesv2.css" />
+    <script type="text/javascript" src="ajax.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <title>Registrar promocion</title>
 
   </head>
-  <body>
+  <body >
     <header class="flexdad navbar">
       <div class="dentro logo navbar_logo">
           <a class="navbar-brand" href="index.php" alt="logo"></a>
@@ -53,6 +55,42 @@
                  <div class="TextoFormulario">
                  <label for="nombre">ID del Producto</label>
                  <input  class="styleName" type="number" id="promo" name="id" />
+                <!-- <button type="button" onclick="muestra()">Probar</button>
+                 
+			<select id="lista" >
+			<option value="0">Selecciona una opción</option>
+			</select>
+		
+		
+			<script type="text/javascript">
+				
+			
+			function muestra(){
+			
+				$.ajax({
+					url: 'inicio.php?ctrl=productos&act=listarids&r=json',
+					contentType: 'application/json',
+					dataType: 'json',
+					success: function(json){
+					
+							console.log("hola");
+							var select = document.getElementById("lista");
+							for(i in json){
+								console.log(json[i]);
+								var texto = document.createTextNode(json[i].idproductos);
+								var option = document.createElement('option');
+								option.setAttribute('value',json[i].idproductos);
+								option.appendChild(texto);
+								select.appendChild(option);
+									}
+								},
+					error: function (xmlHttpRequest, textStatus, errorThrown) {
+					      if(xmlHttpRequest.readyState == 0 || xmlHttpRequest.status == 0) 
+					      {return;}              
+         					else{ alert(textStatus + '-' + errorThrown); return false;}}
+					});
+			}
+			</script>-->
                  </div>
                </td>
              </tr>

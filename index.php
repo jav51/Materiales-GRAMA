@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
 
-<meta charset="utf-8">
+
 <link rel="stylesheet" type="text/css" href="stylesv2.css" />
 <link rel="stylesheet" type="text/css" href="stylescomp.css">
 <link rel="stylesheet" type="text/css" href="nav.css">
@@ -23,12 +23,12 @@
         </a>
       </li>
       <li >
-        <a href="Productos.html">
+        <a href="Vista/Productos.html">
           <span>Productos</span>
         </a>
     </li>
       <li >
-        <a href="Servicios.html">
+        <a href="Vista/Servicios.html">
           <span>Servicios</span>
         </a>
     </li>
@@ -56,7 +56,7 @@ if(!isset($_SESSION["session_username"])){ ?>
       <a href="logout.php" class="sesionmenu" ><span>Cerrar Sesion</span></a>
     </div><?php } else{ ?>
       <div class="dentro logo carrito_logo">
-          <a class="carrito_brand" href="Vista/carro.html" alt="logo"></a>
+          <a class="carrito_brand" href="Vista/carro.php" alt="logo"></a>
      </div>
       <div id="Iniciado">
         <a href="logout.php" class="sesionmenu" ><span>Cerrar Sesion</span></a>
@@ -132,9 +132,9 @@ if(!isset($_SESSION["session_username"])){ ?>
             <th class="headSize"></th>
           </tr>
           <tr>
-            <td><a href="Tabla-promociones.html"><img class="imgOfer" src="http://www.cemexmexico.com/Content/productos/images/cemento-campana-sacos.jpg" alt="oferta1"></a></td>
-            <td><a href="Tabla-promociones.html"><img class="imgOfer" src="http://www.arcelormittalca.com/store/images/D/vigas-ipn.jpg" alt="oferta2"></a></td>
-            <td><a href="Tabla-promociones.html"><img class="imgOfer" src="https://www.trateco.net/fotos/grava_cara.jpg" alt="oferta3"></a></td>
+            <td><a href="inicio.php?ctrl=promociones&act=listar"><img class="imgOfer" src="http://www.cemexmexico.com/Content/productos/images/cemento-campana-sacos.jpg" alt="oferta1"></a></td>
+            <td><a href="inicio.php?ctrl=promociones&act=listar"><img class="imgOfer" src="http://www.arcelormittalca.com/store/images/D/vigas-ipn.jpg" alt="oferta2"></a></td>
+            <td><a href="inicio.php?ctrl=promociones&act=listar"><img class="imgOfer" src="https://www.trateco.net/fotos/grava_cara.jpg" alt="oferta3"></a></td>
           </tr>
         </table>
 

@@ -55,7 +55,7 @@
             <td>
               <div class="TextoFormulario">
                 <label for="mail">Correo electronico:</label>
-                <input class=" styleName" type="email" id="inimail" name="usuario" />
+                <input class=" styleName" type="email" id="inimail" name="usuario" onkeyup="validarmail(this)"/>
           </div>
           </td>
           </tr>
@@ -131,6 +131,17 @@
         if(x>=2)
         {
           document.getElementById("Inicio_sesion").submit();
+        }
+      }
+      function validarmail(input)
+      {
+        var mailpattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if(!mailpattern.test(input.value))
+        {
+          input.className="styleNameError";
+        }
+        else{
+          input.className="styleNameAceptado";
         }
       }
 

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include('Modelos/PromocionMdl.php');
 
 
@@ -47,7 +47,9 @@ class PromocionCtrl
   function procesarVista($data)
   {
             global $filas;
-						$vista = file_get_contents("Vista/Tabla-promociones.html");
+            					if($_SESSION['session_id']=='753159'){
+						$vista = file_get_contents("Vista/Tabla-promociones.html");}
+						else{$vista = file_get_contents("Vista/Tabla-promociones_user.html");}
 						//Obtengo la fila de la tabla
 						$inicio_fila = strrpos($vista,'<tr>');
 						$final_fila = strrpos($vista,'</tr>') + 5;

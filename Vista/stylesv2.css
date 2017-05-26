@@ -8,6 +8,10 @@ p{
   text-align: justify;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
 h2{
   margin-top: 20px;
@@ -149,10 +153,10 @@ th, td{
 
 
 .slide_imagen{
-  max-height: 100%;
-  min-height: 100%;
-  max-width: 70%;
-  min-width: 70%;
+  max-height: 350px;
+  min-height: 350px;
+  max-width: 500px;
+  min-width: 500px;
 }
 
 .numero_slide{
